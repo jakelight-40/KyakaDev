@@ -1,0 +1,173 @@
+
+.light {
+      color:#555;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      transition: background-color 0.5s, color 0.5s;
+
+}
+
+.dark {
+      color:#555;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #000a1a;
+      transition: background-color 0.5s, color 0.5s;
+}
+
+
+
+
+
+
+#theme {
+
+margin:calc(1.5%) ;
+background-color: transparent;
+color:#595959;
+font-size:calc(100%);
+outline: none;
+width:calc(15.7%) ;
+border:0.5px solid #FC6C85;
+ border-radius: 5px;
+ padding: calc(1.5%) ;
+ border-style: solid;
+ border-color:#005ba6;
+ border-top-right-radius:17px ;
+ border-bottom-left-radius:17px ;
+ text-align: center ;
+        
+}
+
+#theme:active{
+transform: scale(0.9);
+}
+
+button { 
+    width: 100%;
+    margin: 0;
+    margin-bottom:calc(6%) ;
+    margin-left:calc(4%) ;
+    font-size:calc(100%) ;
+    border:none ;
+    background-color:transparent ;
+    color:#595959 ;
+    text-align:left ;
+}
+
+
+
+    .bk-ttl {
+            width:100% ;
+            margin:0px ;
+            background-color: transparent;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(89, 89, 89, 0.2);
+            transition: background 0.5s;
+            text-align: center ;
+            color:#595959 ;
+}
+
+.hymn-buttons {
+      overflow-y:scroll;
+}
+
+.search-type {
+      height:calc(6.9%);
+      width: calc(50%) ;
+      border-color:#002b54 ;
+      border-top-right-radius: 17px ;
+      border-bottom-left-radius: 17px ;
+      border-style: solid ;
+      
+      margin:calc(1.5%);
+      font-size:calc(100%) ;
+      padding:calc(1.5%) ;
+      background-color:transparent ;
+      color: #595959 ;
+}
+
+.search-ico {
+      padding: calc(1.5%) ;
+      background-color:transparent ;
+      font-size: calc(100%);
+      width:calc(14%) ;
+      border-width:0.5px ;
+      border-color:#005ba6;
+      border-style: solid ;
+      border-bottom-left-radius: 17px ;
+      border-top-right-radius: 17px;
+      text-align: center ;
+      margin:calc(1.5%) ;
+}
+.search-ico:active {
+      transform: scale(0.9) ;
+}
+
+.lyrics {
+    margin-top: 20px;
+    font-size: 20px;
+    white-space: pre-line;
+    padding: calc(6.2%);
+    border: none ;
+    border-radius: 4px;
+    background-color: transparent;
+    user-select: text;
+    color:#595959 ;
+    text-align:left ;
+}
+   #lyrics { 
+    overflow-y:scroll ;
+    
+}
+
+
+  
+  .title {
+        background-color: transparent ;
+        width: calc(74%) ;
+        border-color:red ;
+        height:calc(14.5%) ;
+        font-size:calc(100%) ;
+        color:#595959;
+        vertical-align: top ;       
+        font-weight:bold ;    
+        text-align: center; 
+        padding-right:calc(3.1%) ;
+        padding-left:calc(3.1%) ;
+        margin-top:0 ;
+        margin-left:calc(1.5%) ;
+        border:none ;
+        border-top-right-radius:10px ;
+        border-bottom-left-radius:10px ;
+        
+  }
+    
+.back {
+      width:calc(20%) ;
+      padding-left:calc(1.8%) ;
+      font-weight:bold ;
+      font-size:calc(100%) ;
+      background-color:transparent ;
+      color:#595959 ;
+      border-top-right-radius: 10px ;
+      border-bottom-left-radius: 10px;
+      border-style: solid ;
+      border-color: #005ba6;
+      border-width:0.5px;
+      margin-left:calc(0.6%) ;
+      margin-right:calc(0.6%) ;
+      margin-top:0 ;
+      vertical-align:top ;
+      
+}
+
+.spacebot {
+      padding:calc(4%) ;
+}
+
+
+
+
+

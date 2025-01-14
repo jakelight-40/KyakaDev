@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hymn Lyrics</title>
+    <link rel='stylesheet' href='style.css'/>
+</head>
+<body>
+    <div>
+        <button id="back-button" class="back"> &#x25c0;Back </button>
+        <button id="hymn-title" class="title" ></button>
+        
+        <div id="lyrics" class="lyrics"></div>
+
+    </div>
+        <div class="spacebot"> </div>
+    
+    <script src="lyrics.js"></script>
+    
+    <script>
+
+  // Function to apply the theme based on saved preferences
+  function applyTheme() {
+    const theme = localStorage.getItem('theme');
+    if (theme) {
+      document.body.className = theme; // Add the saved theme class
+    }
+  }
+
+  // Function to toggle the theme
+  function toggleTheme() {
+    let currentTheme = document.body.className;
+    let newTheme = currentTheme === 'dark' ? 'light' : 'dark'; // Toggle logic
+    document.body.className = newTheme; // Update body class
+    localStorage.setItem('theme', newTheme); // Save preference in local storage
+  }
+
+  // Apply theme on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    applyTheme(); // Apply saved theme
+    document.getElementById('theme').addEventListener('click', toggleTheme); // Add event listener
+  });
+
+    </script>
+</body>
+</html>
