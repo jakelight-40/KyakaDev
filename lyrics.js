@@ -81,7 +81,7 @@ const hymnsData = {
 
 };
       function displayLyrics(title) {
-    const lyricsDiv = document.getElementById('lyrics');
+    const lyricsDiv = document.getElementById('hlyrics');
     const hymnTitleElement = document.getElementById('hymn-title');
     hymnTitleElement.innerText = title;
     lyricsDiv.innerText = hymnsData[title] || "Lyrics not found.";
@@ -91,7 +91,7 @@ const hymnsData = {
 if (hymnTitle && hymnsData[hymnTitle]) {
     displayLyrics(hymnTitle);
 } else {
-    document.getElementById('lyrics').innerText = "Hymn not found.";
+    document.getElementById('hlyrics').innerText = "Hymn not found.";
 }
 
 // Back button functionality
