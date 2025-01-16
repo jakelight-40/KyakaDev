@@ -5,16 +5,16 @@
         
    <link rel='stylesheet' href='style.css'/></head>
     <body>
-        
+          <div class="container">
+          <section class="main-content">     
+        <div class="fixer">
               <button class="bk-ttl">Baptist Hymn Book</button>
-             <div class="container">
         <button id='theme' onClick='changeTheme()'>🌙</button>
         <input type="text" id="song-search" placeholder="Type a hymn title, lyrics or number" class="search-type">
         <button id="search-button" class="search-ico"> &#128269; </button>
         <div id="lyrics" class="lyrics"></div>
-    </div>
-       
-        
+        </div>
+     
             <div class="hymn-buttons">
             <button class="hymn" data-title="1. HOLY HOLY HOLY">1. HOLY HOLY HOLY</button> <br>
 <button class="hymn" data-title="2. OLD RUGGED CROSS">2. OLD RUGGED CROSS</button> <br>
@@ -89,15 +89,15 @@
 <button class="hymn" data-title="71. JESUS SAVES">71. JESUS SAVES</button> <br>
 <button class="hymn" data-title="72. DOWN IN THE VALLEY WITH MY SAVIOR">72. DOWN IN THE VALLEY WITH MY SAVIOR</button> <br>
 <button class="hymn" data-title="73. THE SOLID ROCK">73. THE SOLID ROCK</button> <br>
-            
-            
+            </div>
+        <div class="footer">
+              
         </div>
+        </section>
+       </div> 
         
-        <div class="spacebot"> </div>
-        
-    <script src='script.js'></script>
-        
-        <script>
+         <script>
+
   // Function to apply the theme based on saved preferences
   function applyTheme() {
     const theme = localStorage.getItem('theme');
@@ -119,7 +119,11 @@
     applyTheme(); // Apply saved theme
     document.getElementById('theme').addEventListener('click', toggleTheme); // Add event listener
   });
-  
-        </script>
+
+    </script>
+
+
+    <script src="script.js"></script>
+    
     </body>
 </html>
