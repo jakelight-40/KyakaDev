@@ -2,6 +2,8 @@
 h5 {
       margin:3px ;
 }
+
+
 .fixer {
       margin:5px;
       padding: 1px;
@@ -83,14 +85,23 @@ button:active {
      color:#b3b3b3 ; 
 }
 
+.info {
+      width:8% ;
+      font-weight:bold ;
+      font-size:20px ;
+      margin:0 ;
+      padding:0 ;
+      
+      
+}
 
     .bk-ttl {
-            width:100% ;
-            margin:0px ;
+            width:80% ;
+            margin-right:12px ;
+            margin-left:1px ;
             margin-bottom:5px ;
             background-color: transparent;
             padding: 10px;
-            box-shadow: 0 0 10px rgba(89, 89, 89, 0.2);
             transition: background 0.5s;
             text-align: center ;
             color:#595959 ;
@@ -240,6 +251,3 @@ button:active {
 
 
 
-
-
-       
