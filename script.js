@@ -112,7 +112,7 @@ document.getElementById('search-button').addEventListener('click', () => {
     
     if (matchedHymns.length > 0) {
         const hymnList = matchedHymns.map(hymn => `<button class="hymn" data-title="${hymn}">${hymn}</button>`).join('');
-        lyricsDiv.innerHTML = `<h3>Matching Hymns:</h3><div class="hymn-buttons">${hymnList}</div>`;
+        lyricsDiv.innerHTML = `<h5>Matching Hymns:</h5><div class="hymn-buttons">${hymnList}</div>`;
         lyricsDiv.hidden = false;
 
         // Add event listeners for newly created hymn buttons
