@@ -61,7 +61,7 @@ transform: scale(0.9);
     margin-top: 0; 
     margin-left:calc(4%) ;
     position: relative; 
-    height: calc(100vh - 200px);
+    height: calc(100vh - 190px);
     overflow-y: scroll; 
     overflow-x: hidden;
     display: flex;
