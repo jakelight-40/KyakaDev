@@ -2,130 +2,155 @@
 <html>
     <head>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        
-   <link rel='stylesheet' href='style.css'/></head>
-    <body>
-          <div class="container">
-          <section class="main-content">     
-        <div class="fixer">
-        <button onclick="location.href='about.html'" class="info">&#9432;</button>
-        <button class="bk-ttl">Baptist Hymn Book</button> <br>
-        <button id='theme' onClick='changeTheme()'>🌙</button>
-        <input type="text" id="song-search" placeholder="Type a hymn title, lyrics or number" class="search-type">
-        <button id="search-button" class="search-ico"> &#128269; </button>
-        <div id="lyrics" class="lyrics"></div>
-        </div>
-     
-            <div class="hymn-buttons">
-            <button class="hymn" data-title="1. HOLY HOLY HOLY">1. HOLY HOLY HOLY</button> <br>
-<button class="hymn" data-title="2. OLD RUGGED CROSS">2. OLD RUGGED CROSS</button> <br>
-<button class="hymn" data-title="3. ALL TO JESUS I SURRENDER">3. ALL TO JESUS I SURRENDER</button> <br>
-<button class="hymn" data-title="4. TRUST AN OBEY">4. TRUST AN OBEY</button> <br>
-<button class="hymn" data-title="5. WHAT A FRIEND">5. WHAT A FRIEND</button> <br>
-<button class="hymn" data-title="6. WHAT CAN WASH AWAY">6. WHAT CAN WASH AWAY</button> <br>
-<button class="hymn" data-title="7. AMAZING GRACE">7. AMAZING GRACE</button> <br>
-<button class="hymn" data-title="8. AS THE DEER PATHETH">8. AS THE DEER PATHETH</button> <br>
-<button class="hymn" data-title="9. BLESSED ASSURANCE">9. BLESSED ASSURANCE</button> <br>
-<button class="hymn" data-title="10. COUNT YOUR BLESSINGS">10. COUNT YOUR BLESSINGS</button> <br>
-<button class="hymn" data-title="11. GIVE THANKS">11. GIVE THANKS</button> <br>
-<button class="hymn" data-title="12. HOW GREAT THOU ART">12. HOW GREAT THOU ART</button> <br>
-<button class="hymn" data-title="13. THERE IS POWER IN THE BLOOD">13. THERE IS POWER IN THE BLOOD</button> <br>
-<button class="hymn" data-title="14. ROCK OF AGES">14. ROCK OF AGES</button> <br>
-<button class="hymn" data-title="15. WHEN I SURVEY THE WONDROUS CROSS">15. WHEN I SURVEY THE WONDROUS CROSS</button> <br>
-<button class="hymn" data-title="16. HEAVENLY SUNLIGHT">16. HEAVENLY SUNLIGHT</button> <br>
-<button class="hymn" data-title="17. JUST A CLOSER WALK WITH THEE">17. JUST A CLOSER WALK WITH THEE</button> <br>
-<button class="hymn" data-title="18. JESUS PAID IT ALL">18. JESUS PAID IT ALL</button> <br>
-<button class="hymn" data-title="19. LIKE A RIVER GLORIOUS">19. LIKE A RIVER GLORIOUS</button> <br>
-<button class="hymn" data-title="20. PRAISE HIM! PRAISE HIM">20. PRAISE HIM! PRAISE HIM</button> <br>
-<button class="hymn" data-title="21. I WILL SING THE WONDROUS STORY">21. I WILL SING THE WONDROUS STORY</button> <br>
-<button class="hymn" data-title="22. THE CHURCH'S ONE FOUNDATION">22. THE CHURCH'S ONE FOUNDATION</button> <br>
-<button class="hymn" data-title="23. TO GOD BE THE GLORY">23. TO GOD BE THE GLORY</button> <br>
-<button class="hymn" data-title="24. REDEEMED">24. REDEEMED</button> <br>
-<button class="hymn" data-title="25. TELL ME THE STORY OF JESUS">25. TELL ME THE STORY OF JESUS</button> <br>
-<button class="hymn" data-title="26. PRAISE THE LORD, THE ALMIGHTY">26. PRAISE THE LORD, THE ALMIGHTY</button> <br>
-<button class="hymn" data-title="27. SILENT NIGHT, HOLY NIGHT">27. SILENT NIGHT, HOLY NIGHT</button> <br>
-<button class="hymn" data-title="28. MAN OF SORROWS">28. MAN OF SORROWS</button> <br>
-<button class="hymn" data-title="29. AT THE CROSS">29. AT THE CROSS</button> <br>
-<button class="hymn" data-title="30. CHRIST THE LORD IS RISEN TODAY">30. CHRIST THE LORD IS RISEN TODAY</button> <br>
-<button class="hymn" data-title="31. WILL JESUS FIND US WATCHING?">31. WILL JESUS FIND US WATCHING?</button> <br>
-<button class="hymn" data-title="32. HOLY SPIRIT FAITHFUL GUIDE">32. HOLY SPIRIT FAITHFUL GUIDE</button> <br>
-<button class="hymn" data-title="33. O SPREAD THE TIDINGS' ROUND">33. O SPREAD THE TIDINGS' ROUND</button> <br>
-<button class="hymn" data-title="34. SAFELY THROUGH ANOTHER WEEK">34. SAFELY THROUGH ANOTHER WEEK</button> <br>
-<button class="hymn" data-title="35. BREAK THOUGH THE BREAD OF LIFE">35. BREAK THOUGH THE BREAD OF LIFE</button> <br>
-<button class="hymn" data-title="36. ABIDE WITH ME">36. ABIDE WITH ME</button> <br>
-<button class="hymn" data-title="37. STANDING ON THE PROMISES">37. STANDING ON THE PROMISES</button> <br>
-<button class="hymn" data-title="38. BLESSED BE THE TIE THAT BINDS">38. BLESSED BE THE TIE THAT BINDS</button> <br>
-<button class="hymn" data-title="39. ONWARD CHRISTIAN SOLDIER">39. ONWARD CHRISTIAN SOLDIER</button> <br>
-<button class="hymn" data-title="40. AMIDST US OUR BELOVED STANDS">40. AMIDST US OUR BELOVED STANDS</button> <br>
-<button class="hymn" data-title="41. WONDEFUL WORDS OF LIFE">41. WONDEFUL WORDS OF LIFE</button> <br>
-<button class="hymn" data-title="42. THERE IS A FOUNTAIN">42. THERE IS A FOUNTAIN</button> <br>
-<button class="hymn" data-title="43. GRACE GREATER THAN OUR SIN">43. GRACE GREATER THAN OUR SIN</button> <br>
-<button class="hymn" data-title="44. COME EVERY SOUL BY SIN OPPRESSED">44. COME EVERY SOUL BY SIN OPPRESSED</button> <br>
-<button class="hymn" data-title="45. LOOK TO THE LAMB OF GOD">45. LOOK TO THE LAMB OF GOD</button> <br>
-<button class="hymn" data-title="46. I HAVE A SONG I LOVE TO SING">46. I HAVE A SONG I LOVE TO SING</button> <br>
-<button class="hymn" data-title="47. YEARS I SPENT IN VANITY AND PRIDE">47. YEARS I SPENT IN VANITY AND PRIDE</button> <br>
-<button class="hymn" data-title="48. I LOVE TO TELL THE STORY">48. I LOVE TO TELL THE STORY</button> <br>
-<button class="hymn" data-title="49. WHAT CAN WASH AWAY MY SIN">49. WHAT CAN WASH AWAY MY SIN</button> <br>
-<button class="hymn" data-title="50. I HAVE REACHED THE LAND">50. I HAVE REACHED THE LAND</button> <br>
-<button class="hymn" data-title="51. IT IS WELL WITH MY SOUL">51. IT IS WELL WITH MY SOUL</button> <br>
-<button class="hymn" data-title="52. TIS SO SWEET TO TRUST IN JESUS">52. TIS SO SWEET TO TRUST IN JESUS</button> <br>
-<button class="hymn" data-title="53. ALL THE WAY MY SAVIOR LEADS ME">53. ALL THE WAY MY SAVIOR LEADS ME</button> <br>
-<button class="hymn" data-title="54. FAITH IS THE VICTORY">54. FAITH IS THE VICTORY</button> <br>
-<button class="hymn" data-title="55. CHANNELS ONLY">55. CHANNELS ONLY</button> <br>
-<button class="hymn" data-title="56. TAKE TIME TO BE HOLY">56. TAKE TIME TO BE HOLY</button> <br>
-<button class="hymn" data-title="57. NEARER MY GOD TO THEE">57. NEARER MY GOD TO THEE</button> <br>
-<button class="hymn" data-title="58. MORE ABOUT JESUS">58. MORE ABOUT JESUS</button> <br>
-<button class="hymn" data-title="59. TAKE MY LIFE AND LET IT BE">59. TAKE MY LIFE AND LET IT BE</button> <br>
-<button class="hymn" data-title="60. MY JESUS I LOVE THEE">60. MY JESUS I LOVE THEE</button> <br>
-<button class="hymn" data-title="61. ALL FOR JESUS">61. ALL FOR JESUS</button> <br>
-<button class="hymn" data-title="62. REVIVE US AGAIN">62. REVIVE US AGAIN</button> <br>
-<button class="hymn" data-title="63. I AM PRESSING ON THE UPWARD WAY">63. I AM PRESSING ON THE UPWARD WAY</button> <br>
-<button class="hymn" data-title="64. THERE IS A PLACE OF QUIET REST">64. THERE IS A PLACE OF QUIET REST</button> <br>
-<button class="hymn" data-title="65. WHAT A FELLOWSHIP, WHAT A JOY DIVINE">65. WHAT A FELLOWSHIP, WHAT A JOY DIVINE</button> <br>
-<button class="hymn" data-title="66. THE GREAT PHYSICIAN">66. THE GREAT PHYSICIAN</button> <br>
-<button class="hymn" data-title="67. WONDERFUL PEACE">67. WONDERFUL PEACE</button> <br>
-<button class="hymn" data-title="68. JUST AS I AM">68. JUST AS I AM</button> <br>
-<button class="hymn" data-title="69. HOW GREAT THOU ART">69. HOW GREAT THOU ART</button> <br>
-<button class="hymn" data-title="70. STAND UP FOR JESUS">70. STAND UP FOR JESUS</button> <br>
-<button class="hymn" data-title="71. JESUS SAVES">71. JESUS SAVES</button> <br>
-<button class="hymn" data-title="72. DOWN IN THE VALLEY WITH MY SAVIOR">72. DOWN IN THE VALLEY WITH MY SAVIOR</button> <br>
-<button class="hymn" data-title="73. THE SOLID ROCK">73. THE SOLID ROCK</button> <br>
-            </div>
-        <div class="footer">
-              
-        </div>
-        </section>
-       </div> 
-        
-         <script>
+        <title>HymnBooks</title>
+   <link rel='stylesheet' href='style.css'/>
+   
+<script>
+  (function () {
+    try {
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    } catch (e) {
+      console.error('Theme preload error:', e);
+    }
+  })();
+</script>
 
-  // Function to apply the theme based on saved preferences
+   </head>
+    <body>
+    <div class="head">
+     <button onclick="location.href='about.html'" class="info">&#9432;</button>
+     <button class="bk-ttl2">HymnBooks</button>
+     <button class="theme" id='theme' onClick='changeTheme()'>🌙</button>
+    </div>
+     <button class="stol"></button>
+
+    <div class="alb">
+        <button class="but" onclick="location.href='baptisth.html'">Baptist Hymnbook</button>
+        <button class="but" onclick="location.href='LAE.html'">Louange À l'Eternel</button>
+        <button class="but" onclick="location.href='NZM.html'">Nyimbo Za Mungu</button>
+        <button class="but" onclick="location.href='NZW.html'">Nyimbo Za Wokovu</button>
+    </div>
+    <button class="stol"></button>
+<style>
+
+.head {
+    margin-bottom: 1vh;
+    text-align: center;
+    height: 8vh;
+}
+
+.light .head {
+      background:#ebebeb ;
+}
+
+.dark .head {
+    background:#002438;
+
+}
+
+.stol {
+    width: 100%;
+    background-color: grey;
+    height: 0.5vh;
+}
+
+.but {
+    margin: 1vh auto;
+    width: 80%;
+    height: 18vh;
+    text-align: center;
+    white-space: pre-line;
+    color: black;
+    border-radius: 25%;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    background: transparent;
+    border: 0.5vh solid #004678;
+}
+
+.light .but {
+    color: black;
+}
+.light .but:hover {
+    color: white;
+}
+
+.but:hover {
+    background: #002c58;
+    transform: translateY(-0.5vh);
+}
+
+.but:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.4vh rgba(0, 70, 120, 0.5);
+}
+
+.bk-ttl2 {
+    background: transparent;
+    border: none;
+    height: 8vh;
+    font-size:1em ;
+}
+
+.alb {
+    margin-top: 1vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    height: 80vh;
+    flex-direction: column;
+}
+
+</style>    
+             <script>
+             
+function changeTheme(){
+
+if(document.getElementById('theme').innerHTML==='🌙'){
+
+
+document.getElementById('theme').innerHTML='☀';
+ }
+else{
+
+
+
+
+
+document.getElementById('theme').innerHTML='🌙';
+
+}
+}
+
+
   function applyTheme() {
     const theme = localStorage.getItem('theme');
     if (theme) {
-      document.body.className = theme; // Add the saved theme class
+      document.body.className = theme;
     }
   }
 
-  // Function to toggle the theme
   function toggleTheme() {
     let currentTheme = document.body.className;
-    let newTheme = currentTheme === 'dark' ? 'light' : 'dark'; // Toggle logic
-    document.body.className = newTheme; // Update body class
-    localStorage.setItem('theme', newTheme); // Save preference in local storage
+    let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    document.body.className = newTheme; 
+    localStorage.setItem('theme', newTheme);
   }
 
-  // Apply theme on page load
   document.addEventListener('DOMContentLoaded', () => {
-    applyTheme(); // Apply saved theme
-    document.getElementById('theme').addEventListener('click', toggleTheme); // Add event listener
+    applyTheme();
+    document.getElementById('theme').addEventListener('click', toggleTheme);
   });
 
     </script>
 
-
-    <script src="script.js"></script>
-    
+    <script src='script.js'></script>
     </body>
 </html>
-
