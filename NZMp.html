@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hymn Lyrics</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <script>
+    (function () {
+      try {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      } catch (e) {
+        console.error('Theme preload error:', e);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div>
+    <div class="lycfix">
+      <button id="back-button" class="back">&#x25c0;Nyuma</button>
+      <button id="hymn-title" class="title"></button>
+    </div>
+    <div class="htext">
+      <div id="hlyrics" class="hlyrics"></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <button id="AD" class="AI"><span>A<sup>-</sup></span></button>
+    <button id="cop">&#128203;</button>
+    <button id="Fav">♥</button>
+    <button id="AI" class="AI"><span>A<sup>+</sup></span></button>
+  </div>
+
+  <style>
+    .AI {
+      flex: 1;
+      font-size: 1.8em;
+      vertical-align: bottom;
+      width: 15%;
+      margin-bottom: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      text-align: center;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    #cop {
+      font-size: 1.8em;
+      width: 21%;
+      margin-bottom: 20px;
+      margin-left: 15px;
+      margin-right: 15px;
+      text-align: center;
+    }
+
+    #Fav {
+      width: 21%;
+      font-size: 1.8em;
+    }
+  </style>
+
+  <script src="NZM.js"></script>
+
+  <script>
+    function applyTheme() {
+      const theme = localStorage.getItem('theme');
+      if (theme) {
+        document.body.className = theme;
+      }
+    }
+
+    function toggleTheme() {
+      let currentTheme = document.body.className;
+      let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.body.className = newTheme;
+      localStorage.setItem('theme', newTheme);
+    }
+
+    function copyLyrics() {
+      const lyricsText = document.getElementById("hlyrics").innerText;
+
+      const tempInput = document.createElement("textarea");
+      tempInput.value = lyricsText;
+      tempInput.setAttribute("readonly", "");
+      tempInput.style.position = "absolute";
+      tempInput.style.left = "-9999px";
+      document.body.appendChild(tempInput);
+
+      tempInput.select();
+      tempInput.setSelectionRange(0, 99999); 
+
+      try {
+        const successful = document.execCommand("copy");
+        alert(successful ? "Maandishi yamenakiliwa kwenye ubao wa kunakili" : "Imeshindikana kunakili maandishi");
+      } catch (err) {
+        alert("Copy command failed.");
+      }
+
+      document.body.removeChild(tempInput);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      applyTheme();
+
+      if (document.getElementById("theme")) {
+        document.getElementById("theme").addEventListener("click", toggleTheme);
+      }
+
+      let fontSize = 16;
+
+      function updateFontSize() {
+        const lyricsDiv = document.getElementById("hlyrics");
+        if (lyricsDiv) {
+          lyricsDiv.style.fontSize = `${fontSize}px`;
+        }
+      }
+
+      const incFontBtn = document.getElementById("AI");
+      if (incFontBtn) {
+        incFontBtn.addEventListener("click", () => {
+          fontSize += 2;
+          updateFontSize();
+        });
+      }
+
+      const decFontBtn = document.getElementById("AD");
+      if (decFontBtn) {
+        decFontBtn.addEventListener("click", () => {
+          if (fontSize > 10) {
+            fontSize -= 2;
+            updateFontSize();
+          }
+        });
+      }
+
+      const copyBtn = document.getElementById("cop");
+      if (copyBtn) {
+        copyBtn.addEventListener("click", copyLyrics);
+      }
+
+      // Favorite button logic (kept page-specific)
+      const favBtn = document.getElementById("Fav");
+      if (favBtn) {
+        favBtn.addEventListener("click", function () {
+          const hymnTitleText = document.getElementById("hymn-title").innerText;
+          if (hymnTitleText) {
+            let pageId = "page1";
+            let favorites = JSON.parse(localStorage.getItem(pageId)) || [];
+
+            if (!favorites.includes(hymnTitleText)) {
+              favorites.push(hymnTitleText);
+              localStorage.setItem(pageId, JSON.stringify(favorites));
+              alert(`${hymnTitleText} imeongezwa kwenye vipendwa.`);
+            } else {
+              alert(`${hymnTitleText} ipo tayari kwenye vipendwa.`);
+            }
+          }
+        });
+      }
+
+      const favoBtn = document.getElementById("favo");
+      if (favoBtn) {
+        favoBtn.addEventListener("click", function () {
+          let pageId = "page1";
+          window.location.href = `FavM.html?pageId=${pageId}`;
+        });
+      }
+    });
+  </script>
+</body>
+</html>

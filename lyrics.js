@@ -3,24 +3,24 @@ const urlParams = new URLSearchParams(window.location.search);
 const hymnTitle = urlParams.get('title');
 
 const hymnsData = {
-   // my lyrics are here
+
    "1. HOLY HOLY HOLY":"Mungu mutakatifu (Nyimbo za Mungu 5)\nBy Reginald Heber (1826)\n\n1. Holy, holy, holy! Lord God Almighty!\nEarly in the morning our song shall rise to Thee;\nHoly, holy, holy, merciful and mighty!\nGod in three Persons, blessed Trinity!\n\n2. Holy, holy, holy! All the saints adore Thee,\nCasting down their golden crowns around the glassy sea;\nCherubim and seraphim falling down before Thee,\nWho was, and is, and evermore shall be.\n\n3. Holy, holy, holy! though the darkness hide Thee,\nThough the eye of sinful man Thy glory may not see;\nOnly Thou art holy; there is none beside Thee,\nPerfect in power, in love, and purity.\n\n4. Holy, holy, holy! Lord God Almighty!\nAll Thy works shall praise Thy Name, in earth, and sky, and sea;\nHoly, holy, holy; merciful and mighty!\n God in three Persons, blessed Trinity!",
 "2. OLD RUGGED CROSS":"By George Bennard (1913)\n\n1. On a hill far away\n stood an old rugged cross,\nthe emblem of suffering and shame;\nand I love that old cross\nwhere the dearest and best\nfor a world of lost sinners was slain.\n\nRefrain:\n\nSo I'll cherish the old rugged cross,\ntill my trophies at last I lay down;\nI will cling to the old rugged cross,\nand exchange it some day for a crown.\n\n2. O that old rugged cross,\nso despised by the world,\nhas a wondrous attraction for me:\nfor the dear Lamb of God\nleft his glory above\nto bear it to dark Calvary.\n\n3. In that old rugged cross,\nstained with blood so divine,\na wondrous beauty I see,\nfor 'twas on that old cross\nJesus suffered and died,\nto pardon and sanctify me.\n\n4. To that old rugged cross\nI will ever be true,\nits shame and reproach gladly bear;\nthen he'll call me some day\nto my home far away,\nwhere his glory forever I'll share.",
 "3. ALL TO JESUS I SURRENDER": "Entre tes mains j'abandonne\nBy Judson W. Van De Venter (1896)\n\n1. All to Jesus, I surrender;\nAll to Him I freely give;\nI will ever love and trust Him,\nIn His presence daily live.\n\nRefrain:\n\nI surrender all, I surrender all,\nAll to Thee, my blessed Savior,\nI surrender all.\n\n2. All to Jesus I surrender;\nHumbly at His feet I bow,\nWorldly pleasures all forsaken;\nTake me, Jesus, take me now\n\n3. All to Jesus, I surrender;\nMake me, Savior, wholly Thine;\nLet me feel the Holy Spirit,\nTruly know that Thou art mine.\n\n4. All to Jesus, I surrender:\nLord, I give myself to Thee;\nFill me with Thy love and power;\nLet Thy blessing fall on me.",
-"4. TRUST AN OBEY": "Tukikwenda pamoja (Nyimbo za Mungu 162)\nBy John H. Sammis (1887)\n\n1. When we walk with the Lord\nin the light of his word,\nwhat a glory he sheds on our way!\nWhile we do his good will,\nhe abides with us still,\nand with all who will trust and obey.\n\nRefrain:\n\nTrust and obey, for there's no other way\nto be happy in Jesus, but to trust and obey.\n\n2. Not a burden we bear,\nnot a sorrow we share,\nbut our toil he doth richly repay;\nnot a grief or a loss,\nnot a frown or a cross,\nbut is blest if we trust and obey.\n\n3. But we never can prove\nthe delights of his love\nuntil all on the altar we lay;\nfor the favor he shows,\n for the joy he bestows,\nare for them who will trust and obey.\n\n4. Then in fellowship sweet\nwe will sit at his feet,\nor we'll walk by his side in the way;\nwhat he says we will do,\nwhere he sends we will go;\nnever fear, only trust and obey.", 
+"4. TRUST AND OBEY": "Tukikwenda pamoja (Nyimbo za Mungu 162)\nBy John H. Sammis (1887)\n\n1. When we walk with the Lord\nin the light of his word,\nwhat a glory he sheds on our way!\nWhile we do his good will,\nhe abides with us still,\nand with all who will trust and obey.\n\nRefrain:\n\nTrust and obey, for there's no other way\nto be happy in Jesus, but to trust and obey.\n\n2. Not a burden we bear,\nnot a sorrow we share,\nbut our toil he doth richly repay;\nnot a grief or a loss,\nnot a frown or a cross,\nbut is blest if we trust and obey.\n\n3. But we never can prove\nthe delights of his love\nuntil all on the altar we lay;\nfor the favor he shows,\n for the joy he bestows,\nare for them who will trust and obey.\n\n4. Then in fellowship sweet\nwe will sit at his feet,\nor we'll walk by his side in the way;\nwhat he says we will do,\nwhere he sends we will go;\nnever fear, only trust and obey.", 
 "5. WHAT A FRIEND":"Yesu ni rafiki yangu (Nyimbo za Mungu 235)\nBy Joseph Medlicott Scriven (1855)\n\n1. What a friend we have in Jesus,\nall our sins and griefs to bear!\nWhat a privilege to carry\neverything to God in prayer!\nO what peace we often forfeit,\nO what needless pain we bear,\nall because we do not carry\neverything to God in prayer!\n\n2. Have we trials and temptations?\nIs there trouble anywhere?\nWe should never be discouraged;\ntake it to the Lord in prayer!\nCan we find a friend so faithful\nwho will all our sorrows share?\nJesus knows our every weakness;\ntake it to the Lord in prayer!\n\n3. Are we weak and heavy laden,\ncumbered with a load of care?\nPrecious Savior, still our refuge\ntake it to the Lord in prayer!\nDo your friends despise, forsake you?\nTake it to the Lord in prayer!\nIn his arms he'll take and shield you;\nyou will find a solace there.",
-"6. WHAT CAN WASH AWAY":"Nini ita nisafisha (Nyimbo za Mungu 113)\nBy Robert Lowry (1876)\n\n1. What can wash away my sin?\nNothing but the blood of Jesus;\nWhat can make me whole again?\nNothing but the blood of Jesus.\n\nRefrain:\n\nOh! precious is the flow\nThat makes me white as snow;\nNo other fount I know,\nNothing but the blood of Jesus.\n\n2. For my pardon, this I see,\nNothing but the blood of Jesus;\nFor my cleansing this my plea,\nNothing but the blood of Jesus.\n\n3. Nothing can for sin atone,\nNothing but the blood of Jesus:\nNaught of good that I have done,\nNothing but the blood of Jesus.\n\n4. This is all my hope and peace,\nNothing but the blood of Jesus;\nThis is all my righteousness,\nNothing but the blood of Jesus.",
-"7. AMAZING GRACE":"By John Newton (1779)\n\n1. Amazing grace (how sweet the sound)\nthat saved a wretch like me!\nI once was lost, but now am found,\nwas blind, but now I see.\n\n2. 'Twas grace that taught my heart to fear,\nand grace my fears relieved:\nhow precious did that grace appear\nthe hour I first believed!\n\n3. Through many dangers, toils and snares\nI have already come:\n'tis grace has brought me safe thus far,\nand grace will lead me home.\n\n4. The Lord has promised good to me,\nhis word my hope secures;\nhe will my shield and portion be\n\"as long as life endures.\n\n\"5. Yes, when this flesh and heart shall fail,\nand mortal life shall cease:\nI shall possess, within the veil,\na life of joy and peace.\n\n6. The earth shall soon dissolve like snow,\nthe sun forbear to shine;\nbut God, who called me here below,\nwill be forever mine.",
+"6. WHAT CAN WASH AWAY":"Nini ita nisafisha (Nyimbo za Mungu 113)\nBy Robert Lowry (1876)\n\n1. What can wash away my sin?\nNothing but the blood of Jesus;\nWhat can make me whole again?\nNothing but the blood of Jesus.\n\nRefrain:\n\nOh! precious is the flow\nThat makes me white as snow;\nNo other fount I know,\nNothing but the blood of Jesus.\n\n2. For my pardon, this I see,\nNothing but the blood of Jesus;\nFor my cleansing this my plea,\nNothing but the blood of Jesus.\n\n3. Nothing can for sin atone,\nNothing but the blood of Jesus;\nNaught of good that I have done,\nNothing but the blood of Jesus.\n\n4. This is all my hope and peace,\nNothing but the blood of Jesus;\nThis is all my righteousness,\nNothing but the blood of Jesus.",
+"7. AMAZING GRACE":"By John Newton (1779)\n\n1. Amazing grace (how sweet the sound)\nthat saved a wretch like me!\nI once was lost, but now am found,\nwas blind, but now I see.\n\n2. 'Twas grace that taught my heart to fear,\nand grace my fears relieved;\nhow precious did that grace appear\nthe hour I first believed!\n\n3. Through many dangers, toils and snares\nI have already come;\n'tis grace has brought me safe thus far,\nand grace will lead me home.\n\n4. The Lord has promised good to me,\nhis word my hope secures;\nhe will my shield and portion be\nas long as life endures.\n\n5. Yes, when this flesh and heart shall fail,\nand mortal life shall cease\nI shall possess, within the veil,\na life of joy and peace.\n\n6. The earth shall soon dissolve like snow,\nthe sun forbear to shine;\nbut God, who called me here below,\nwill be forever mine.",
 "8. AS THE DEER PATHETH":"By Greg Scheer\n\n1. As the deer panteth for the water\nSo my soul longeth after thee\nYou alone are my heart's desire\nAnd I long to worship thee\n\n2. You alone are my strength, my shield\nTo you alone may my spirit yield\nYou alone are my heart's desire\nAnd I long to worship thee\n\n3. You're my friend and you are my brother\nEven though you are a king\nI love you more than any other\nSo much more than anything\n\n4. You alone are my strength, my shield\nTo you alone may my spirit yield\nYou alone are my heart's desire\nAnd I long to worship thee.\n\n5. I love you more than gold or silver,\nOnly you can satisfy.\nYou alone are the real joy giver\nAnd the apple of my eye.\n\n6. You alone are my strength, my shield\nTo you alone may my spirit yield\nYou alone are my heart's desire\nAnd I long to worship you.",
 "9. BLESSED ASSURANCE": "Heri Kabisa Yesu ni wangu (Nyimbo za Mungu 138)\nBy Fanny Crosby\n\n1. Blessed assurance, Jesus is mine!\nO what a foretaste of glory divine!\nHeir of salvation, purchase of God,\n Born of his Spirit, washed in his blood.\n\nRefrain:\n\nThis is my story, this is my song,\nPraising my Savior, all the day long;\nThis is my story, this is my song,\nPraising my Savior all the day long.\n\n2. Perfect submission, perfect delight,\nVisions of rapture now burst on my sight;\nAngels descending, bring from above\nEchoes of mercy, whispers of love.\n\n3. Perfect submission, all is at rest,\nI in my Savior am happy and blest,\nWatching and waiting, looking above,\nFilled with his goodness, lost in his love.",
-"10. COUNT YOUR BLESSINGS":"Ukichukuliwa na mashaka (Nyimbo za Mungu 189)\nBy Johnson Oatman (1897)\n\n1. When upon life's billows you are tempest tossed,\nWhen you are discouraged, thinking all is lost,\nCount your many blessings, name them one by one,\nAnd it will surprise you what the Lord hath done.\n\nRefrain:\n\nCount your blessings, name them one by one:\nCount your blessings, see what God hath done:\nCount your blessings, name them one by one:\nCount your many blessings, see what God hath done.\n\n2. Are you ever burdened with a load of care?\nDoes the cross seem heavy you are called to bear?\nCount your many blessings, ev'ry doubt will fly,\nAnd you will be singing as the days go by.\n\n3. When you look at others with their lands and gold,\nThink that Christ has promised you His wealth untold;\nCount your many blessings, money cannot buy\nYour reward in heaven, nor your home on high.\n\n4. So, amid the conflict, whether great or small,\nDo not be discouraged, God is over all;\nCount your many blessings, angels will attend,\nHelp and comfort give you to your journey's end.",
-"11. GIVE THANKS": "By Henry Smith\n\nGive thanks with a grateful heart\nGive thanks to the Holy One\nGive thanks because He's given\nJesus Christ, His Son. (repeat)\nAnd now let the weak say, 'I am strong'\nLet the poor say, 'I am rich'\nBecause of what the Lord has done for us (2)",
-"12. HOW GREAT THOU ART":"Nina fikili Mungu Baba (Nyimbo za Mungu 11)\nBy Carl Gustav Boberg\n\n1. Oh Lord my God when I in awesome wonder\nConsider all the works Thy hands have made,\nI see the stars, I hear the rolling thunder,\nThy power throughout the universe displayed.\n\nRefrain:\n\nThen sings my soul, my Savior God, to thee:\nHow great Thou art, how great Thou art! (2)\n\n2. When through the woods and forest glades I wander,\nAnd hear the birds sing sweetly in the trees;\nWhen I look down from lofty mountain grandeur,\nAnd hear the brook, and feel the gentle breeze.\n\n3. And when I think that God, His Son not sparing,\nSent Him to die, I scarce can take it in;\nThat on the cross, my burden gladly bearing,\nHe bled and died to take away my sin.\n\n4. When Christ shall come with shout of acclamation\nAnd take me home, what joy shall fill my heart!\nThen I shall bow in humble adoration\nAnd there proclaim, my God, how great Thou art!",
-"13. THERE IS POWER IN THE BLOOD":"Utakubali kuacha makosa (Nyimbo za Mungu 112)\nBy Lewis E. Jones (1899)\n\n1. Would you be free from the burden of sin?\nThere's power in the blood, power in the blood;\nWould you o'er evil a victory win?\nThere's wonderful power in the blood.\n\nChorus:\n\nThere is power, power, wonder-working power\nIn the blood of the Lamb.\nThere is power, power, Wonder-working power\nIn the precious blood of the Lamb.\n\n2. Would you be free from your passion and pride?\nThere's power in the blood, power in the blood:\nCome for a cleansing to Calvary's tide;\nThere's wonderful power in the blood.\n\n3. Would you be whiter, much whiter than snow?\nThere's power in the blood, power in the blood:\nSin stains are lost in its life-giving flow;\nThere's wonderful power in the blood.\n\n4. Would you do service for Jesus your King?\nThere's power in the blood, power in the blood;\nWould you live daily His praises to sing?\nThere's wonderful power in the blood.",
+"10. COUNT YOUR BLESSINGS":"Ukichukuliwa na mashaka (Nyimbo za Mungu 189)\nBy Johnson Oatman (1897)\n\n1. When upon life's billows you are tempest tossed,\nWhen you are discouraged, thinking all is lost,\nCount your many blessings, name them one by one,\nAnd it will surprise you what the Lord hath done.\n\nRefrain:\n\nCount your blessings, name them one by one;\nCount your blessings, see what God hath done;\nCount your blessings, name them one by one;\nCount your many blessings, see what God hath done.\n\n2. Are you ever burdened with a load of care?\nDoes the cross seem heavy you are called to bear?\nCount your many blessings, ev'ry doubt will fly,\nAnd you will be singing as the days go by.\n\n3. When you look at others with their lands and gold,\nThink that Christ has promised you His wealth untold;\nCount your many blessings, money cannot buy\nYour reward in heaven, nor your home on high.\n\n4. So, amid the conflict, whether great or small,\nDo not be discouraged, God is over all;\nCount your many blessings, angels will attend,\nHelp and comfort give you to your journey's end.",
+"11. GIVE THANKS": "By Henry Smith\n\nGive thanks with a grateful heart\nGive thanks to the Holy One\nGive thanks because He's given\nJesus Christ, His Son. (repeat)\n\nAnd now let the weak say, 'I am strong'\nLet the poor say, 'I am rich'\nBecause of what the Lord has done for us (2)",
+"12. HOW GREAT THOU ART":"Nina fikili Mungu Baba (Nyimbo za Mungu 11)\nBy Carl Gustav Boberg\n\n1. Oh Lord my God when I in awesome wonder\nConsider all the works Thy hands have made,\nI see the stars, I hear the rolling thunder,\nThy power throughout the universe displayed.\n\nRefrain:\n\nThen sings my soul, my Savior God, to thee:\nHow great Thou art, how great Thou art! (2)\n\n2. When through the woods and forest glades I wander,\nAnd hear the birds sing sweetly in the trees;\nWhen I look down from lofty mountain grandeur,\nAnd hear the brook, and feel the gentle breeze.\n\n3. And when I think that God, His Son not sparing,\nSent Him to die, I scarce can take it in;\nThat on the cross, my burden gladly bearing,\nHe bled and died to take away my sin.\n\n4. When Christ shall come with shouts of acclamation\nAnd take me home, what joy shall fill my heart!\nThen I shall bow in humble adoration\nAnd there proclaim, my God, how great Thou art!",
+"13. THERE IS POWER IN THE BLOOD":"Utakubali kuacha makosa (Nyimbo za Mungu 112)\nBy Lewis E. Jones (1899)\n\n1. Would you be free from the burden of sin?\nThere's power in the blood, power in the blood;\nWould you o'er evil a victory win?\nThere's wonderful power in the blood.\n\nChorus:\n\nThere is power, power, wonder-working power\nIn the blood of the Lamb.\nThere is power, power, Wonder-working power\nIn the precious blood of the Lamb.\n\n2. Would you be free from your passion and pride?\nThere's power in the blood, power in the blood;\nCome for a cleansing to Calvary's tide;\nThere's wonderful power in the blood.\n\n3. Would you be whiter, much whiter than snow?\nThere's power in the blood, power in the blood;\nSin stains are lost in its life-giving flow;\nThere's wonderful power in the blood.\n\n4. Would you do service for Jesus your King?\nThere's power in the blood, power in the blood;\nWould you live daily His praises to sing?\nThere's wonderful power in the blood.",
 "14. ROCK OF AGES": "Mwamba ulio pasuka (Nyimbo za Mungu 118)\nBy Augustus Toplady (1776)\n\n1. Rock of Ages, cleft for me,\nLet me hide myself in thee;\nLet the water and the blood,\nFrom thy wounded side which flowed,\nBe of sin the double cure;\nSave from wrath and make me pure.\n\n2. Not the labors of my hands\nCan fulfill thy law's demands;\nCould my zeal no respite know,\nCould my tears forever flow,\nAll for sin could not atone;\nThou must save, and thou alone.\n\n3. Nothing in my hand I bring,\nSimply to the cross I cling;\nNaked, come to thee for dress;\nHelpless, look to thee for grace;\nFoul, I to the fountain fly;\nWash me, Savior, or I die.\n\n4. While I draw this fleeting breath,\nWhen mine eyes shall close in death,\nWhen I soar to worlds unknown,\nSee thee on thy judgment throne,\nRock of Ages, cleft for me,\nLet me hide myself in thee.",
 "15. WHEN I SURVEY THE WONDROUS CROSS":"By Isaac Watts (1707)\n\n1. When I survey the wondrous cross\nOn which the Prince of glory died,\nMy richest gain I count but loss,\nAnd pour contempt on all my pride.\n\n2. Forbid it, Lord, that I should boast,\nSave in the death of Christ my God!\nAll the vain things that charm me most,\nI sacrifice them to His blood.\n\n3. See from His head, His hands, His feet,\nSorrow and love flow mingled down!\nDid e'er such love and sorrow meet,\nOr thorns compose so rich a crown?\n\n4. His dying crimson, like a robe,\nSpreads o'er His body on the tree;\nThen I am dead to all the globe,\nAnd all the globe is dead to me.\n\n5. Were the whole realm of nature mine,\nThat were a present far too small;\nLove so amazing, so divine,\nDemands my soul, my life, my all.\n\n6. To Christ, Who won for sinners grace\nBy bitter grief and anguish sore,\nBe praise from all the ransomed race\nForever and forevermore.",
-"16. HEAVENLY SUNLIGHT":"By Henry J. Zelley (1899)\n\n1. Walking in sunlight all of my journey:\nOver the mountains, through the deep vale;\nJesus has said, \"I'll never forsake thee\",\nPromise divine that never can fail.\n\nRefrain:\n\nHeavenly sunlight, heavenly sunlight,\nFlooding my soul with glory divine:\nHallelujah, I am rejoicing,\nSinging His praises, Jesus is mine.\n\n2. Shadows around me, shadows above me,\nNever conceal my Savior and Guide:\nHe is the Light, in Him is no darkness;\nEver I'm walking close to His side.\n\n3. In the bright sunlight, ever rejoicing,\nPressing my way to mansions above:\nSinging His praises gladly I'm walking,\nWalking in sunlight, sunlight of love.",
-"17. JUST A CLOSER WALK WITH THEE":"By Anonymous\n\n1. I am weak, but Thou art strong;\nJesus, keep me from all wrong;\n I'll be satisfied as long\nAs I walk, let me walk close to Thee.\n\nRefrain:\n\nJust a closer walk with Thee,\nGrant it, Jesus, is my plea,\nDaily walking close to Thee,\n\n2. Let it be, dear Lord,\nlet it beThrough this world of toil and snares\nIf I falter, Lord, who cares?\nWho with me my burden shares?\nNone but Thee, dear Lord, none but Thee.\n\n3. When my feeble life is o'er,\nTime for me will be no more;\nGuide me gently, safely o'er\nTo Thy ingdom shore, to Thy shore.",
+"16. HEAVENLY SUNLIGHT":"By Henry J. Zelley (1899)\n\n1. Walking in sunlight all of my journey,\nOver the mountains, through the deep vale;\nJesus has said, \"I'll never forsake thee\",\nPromise divine that never can fail.\n\nRefrain:\n\nHeavenly sunlight, heavenly sunlight,\nFlooding my soul with glory divine:\nHallelujah, I am rejoicing,\nSinging His praises, Jesus is mine.\n\n2. Shadows around me, shadows above me,\nNever conceal my Savior and Guide:\nHe is the Light, in Him is no darkness;\nEver I'm walking close to His side.\n\n3. In the bright sunlight, ever rejoicing,\nPressing my way to mansions above:\nSinging His praises gladly I'm walking,\nWalking in sunlight, sunlight of love.",
+"17. JUST A CLOSER WALK WITH THEE":"By Anonymous\n\n1. I am weak, but Thou art strong;\nJesus, keep me from all wrong;\n I'll be satisfied as long\nas I walk, let me walk close to Thee.\n\nRefrain:\n\nJust a closer walk with Thee,\nGrant it, Jesus, is my plea,\nDaily walking close to Thee,\n\n2. Let it be, dear Lord,\nlet it be Through this world of toil and snares\nIf I falter, Lord, who cares?\nWho with me my burden shares?\nNone but Thee, dear Lord, none but Thee.\n\n3. When my feeble life is o'er,\nTime for me will be no more;\nGuide me gently, safely o'er\nTo Thy ingdom shore, to Thy shore.",
 "18. JESUS PAID IT ALL":"Bwana Yesu amesema Ee wewe (Nyimbo za Mungu 84)\nBy Elvina M. HalI\n\n 1. I hear the Savior say,\n \"Thy strength indeed is small;\nChild of weakness, watch and pray,\n find in me thine all in all.\"\n\nRefrain:\n\nJesus paid it all, all to him I owe;\n sin had left a crimson stain,\n he washed it white as snow.\n\n2. Lord, now indeed I find\n thy power, and thine alone\n Can change the leper's spots\n and melt the heart of stone.\n\n3. For nothing good have I\n whereby thy grace to claim;\nI'll wash my garments clean\nin the blood of Calvary's Lamb.\n\n 4. And when, before the throne,\nI stand in him complete,\n\"Jesus died my soul to save,\"\n my lips shall still repeat.\"",
 "19. LIKE A RIVER GLORIOUS":"By Frances Ridley Havergal\n\n1. Like a river, glorious\nIs God's perfect peace,\nOver all victorious\nIn its bright increase;\nPerfect, yet it floweth\nFuller every day,\nPerfect, yet it groweth\nDeeper all the way\n\nRefrain:\n\nStayed upon Jehovah,\nHearts are fully blest;\nFinding, as He promised,\nPerfect peace and rest\n\n2. Hidden in the hollow\nOf His blessed hand,\nNever foe can follow,\nNever traitor stand;\nNot a surge of worry,\nNot a shade of care,\nNot a blast of hurry\nTouch the spirit there\n\n3. Every joy or trial\nFalleth from above,\nTraced upon our dial\nBy the Sun of Love.\nWe may trust Him fully\nAll for us to do;\nThey who trust Him wholly\nFind Him wholly true",
 "20. PRAISE HIM! PRAISE HIM":"Sifu sifu Yesu mwokozi (Nyimbo za Mungu 4)\nBy Fanny Crosby (1869)\n\n1. Praise him! praise him! Jesus, our blessed Redeemer!\nSing, O earth - his wonderful love proclaim!\nHail him! hail him! highest archangels in glory,\nStrength and honor give to his holy name!\nLike a shepherd, Jesus will guard his children \nIn his arms he carries them all day long:\n\nRefrain:\n\nPraise him! praise him! tell of his excellent greatness!\nPraise him! praise him! ever in joyful song!\n\n2. Praise him! praise him! Jesus, our blessed Redeemer!\nFor our sins he suffered and bled and died;\nHe our Rock, our hope of eternal salvation,\nHail him! hail him! Jesus the Crucified!\nSound his praises - Jesus who bore our sorrows\nLove unbounded, wonderful, deep and strong:\n\n3. Praise him! praise him! Jesus, our blessed Redeemer!\nHeav'nly portals loud with hosannas ring!\nJesus, Savior, reigneth for ever and ever,\nCrown him! crown him! Prophet and Priest and King!\nChrist is coming, over the world victorious \nPow'r and glory unto the Lord belong",
@@ -78,8 +78,52 @@ const hymnsData = {
 "72. DOWN IN THE VALLEY WITH MY SAVIOR":"Ninataaka kumufata Yesu Mwok. (Nyimbo za Mungu 179)\nBy W. O. Cushing (1878)\n1. Down in the valley with my Savior I would go,\nWhere the flowers are blooming and the sweet waters flow;\nEverywhere He leads me I will follow, follow on,\nWalking in His footsteps till the crown be won.\n\nChorus:\n\nFollow! follow! I will follow Jesus!\nAnywhere, everywhere, I will follow on!\nFollow! follow! I will follow Jesus!\nEverywhere He leads me I will follow on!\n\n2. Down in the valley with my Savior I would go,\nWhere the storms are sweeping and the dark waters flow;\nWith His hand to lead me I will never, never fear,\nDanger cannot fright me if my Lord is near.\n\n3. Down in the valley or upon the mountain steep,\nClose beside my Savior would my soul ever keep;\nHe will lead me safely in the path that He has trod,\nUp to where they gather on the hills of God.",
 "73. THE SOLID ROCK":"Ninasimama kwake Kristo (Nyimbo za Mungu 195)\nBy Edward Mote (1834)\n\n1. My hope is built on nothing less\nthan Jesus' blood and righteousness;\nI dare not trust the sweetest frame,\nbut wholly lean on Jesus' name.\nOn Christ, the solid Rock, I stand;\nall other ground is sinking sand.\n\n2. When darkness veils His lovely face,\nI rest on His unchanging grace;\nin ev'ry high and stormy gale\nmy anchor holds within the veil.\nOn Christ, the solid Rock, I stand;\nall other ground is sinking sand.\n\n3. His oath, His covenant, His blood\n support me in the 'whelming flood;\nwhen all around my soul gives way\nHe then is all my hope and stay.\nOn Christ, the solid Rock, I stand;\nall other ground is sinking sand.\n\n4. When He shall come with trumpet sound,\nO may I then in Him be found,\ndressed in His righteousness alone,\nfaultless to stand before the throne.\nOn Christ, the solid Rock, I stand;\nall other ground is sinking sand.",
 
-
 };
+
+const currentTitle = urlParams.get('title');
+
+function getAdjacentHymn(direction) {
+    const titles = Object.keys(hymnsData);
+    const currentIndex = titles.indexOf(currentTitle);
+
+    if (direction === 'next' && currentIndex < titles.length - 1) {
+        return titles[currentIndex + 1];
+    } else if (direction === 'previous' && currentIndex > 0) {
+        return titles[currentIndex - 1];
+    }
+    return null;
+}
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+document.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+});
+
+document.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].clientX;
+    handleSwipe();
+});
+
+function handleSwipe() {
+    const swipeDistance = touchStartX - touchEndX;
+    if (swipeDistance > 100) {
+
+        const nextHymn = getAdjacentHymn('next');
+        if (nextHymn) {
+            window.location.href = `lyrics.html?title=${encodeURIComponent(nextHymn)}`;
+        }
+    } else if (swipeDistance < -100) {
+
+        const previousHymn = getAdjacentHymn('previous');
+        if (previousHymn) {
+            window.location.href = `lyrics.html?title=${encodeURIComponent(previousHymn)}`;
+        }
+    }
+}
+
+
       function displayLyrics(title) {
     const lyricsDiv = document.getElementById('hlyrics');
     const hymnTitleElement = document.getElementById('hymn-title');
@@ -87,14 +131,96 @@ const hymnsData = {
     lyricsDiv.innerText = hymnsData[title] || "Lyrics not found.";
 }
 
-// Check if the hymn title exists in the hymns data
+
 if (hymnTitle && hymnsData[hymnTitle]) {
     displayLyrics(hymnTitle);
 } else {
     document.getElementById('hlyrics').innerText = "Hymn not found.";
 }
 
-// Back button functionality
 document.getElementById('back-button').addEventListener('click', () => {
     window.history.back();
 });
+
+  function applyTheme() {
+    const theme = localStorage.getItem('theme');
+    if (theme) {
+      document.body.className = theme; 
+    }
+  }
+
+  function toggleTheme() {
+    let currentTheme = document.body.className;
+    let newTheme = currentTheme === 'dark' ? 'light' : 'dark'; 
+    document.body.className = newTheme;
+    localStorage.setItem('theme', newTheme);
+  }
+
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    applyTheme(); 
+    document.getElementById('theme').addEventListener('click', toggleTheme);
+  });
+
+let fontSize = localStorage.getItem('fontSize') ? parseInt(localStorage.getItem('fontSize')) : 16;
+
+function updateFontSize() {
+    const lyricsDiv = document.getElementById('hlyrics');
+    lyricsDiv.style.fontSize = `${fontSize}px`;
+    localStorage.setItem('fontSize', fontSize); 
+}
+
+
+document.addEventListener('DOMContentLoaded', updateFontSize);
+
+
+document.getElementById('AI').addEventListener('click', () => {
+    if (fontSize < 50) {
+        fontSize += 2;
+        updateFontSize();
+    }
+});
+
+
+document.getElementById('AD').addEventListener('click', () => {
+    if (fontSize > 10) { 
+        fontSize -= 2;
+        updateFontSize();
+    }
+});
+
+
+
+document.getElementById('Fav').addEventListener('click', function () {
+    if (hymnTitle) {
+
+        let year = new Date().getFullYear();
+        let favorites = JSON.parse(localStorage.getItem(year)) || [];
+
+        if (!favorites.includes(hymnTitle)) {
+            favorites.push(hymnTitle);
+            localStorage.setItem(year, JSON.stringify(favorites));
+            alert(`${hymnTitle} added to favorites.`);
+        } else {
+            alert(`${hymnTitle} is already in favorites.`);
+        }
+    }
+});
+
+document.getElementById('favo').addEventListener('click', function () {
+    let year = new Date().getFullYear(); 
+
+    window.location.href = `FavE.html?year=${year}`; 
+
+      
+});
+
+
+
+
+
+
+
+
+
+
