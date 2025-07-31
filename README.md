@@ -10,7 +10,7 @@ Elle permet aux utilisateurs d'accéder facilement à ces chants en tout lieu et
 
 ## Fonctionnalités
 
-- **Accès hors ligne** : Lisez les cantiques sans connexion Internet.
+- **Accès enligne et hors ligne** : Lisez les cantiques sans installer l'APK ou sans connexion Internet en installant l'APK.
 - **Mode clair et sombre** : Changez le thème selon vos préférences.
 - **Recherche avancée** : Trouvez un cantique par son titre, son numéro ou n'importe quel mot du texte.
 - **Favoris** : Enregistrez vos cantiques préférés pour un accès rapide.
