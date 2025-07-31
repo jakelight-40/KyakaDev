@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hymn Lyrics</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <script>
+    (function () {
+      try {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      } catch (e) {
+        console.error('Theme preload error:', e);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div>
+    <div class="lycfix">
+      <button id="back-button" class="back">&#x25c0;Nyuma</button>
+      <button class="bk-ttl">Nyamuhanga Apipawe</button> <br>
+      <button onclick="goToPreviousSong()" class="nav">&laquo;</button>
+      <button id="hymn-title" class="title"></button>
+      <button onclick="goToNextSong()" class="nav">&raquo;</button>
+    </div>
+    <div class="htext">
+      <div id="hlyrics" class="hlyrics"></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <button id="AD" class="AI"><span>A<sup>-</sup></span></button>
+    <button id="Fav">&#9829;</button>
+    <button id="cop">&#128203;</button>
+<button onclick="shareFromApp()" id="shareBtn">
+  <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7a2.5 2.5 0 0 0 0-1.4l7.11-4.11A2.5 2.5 0 1 0 15.5 5a2.5 2.5 0 0 0 0 .45L8.39 9.56a2.5 2.5 0 1 0 0 4.88l7.02 4.18a2.5 2.5 0 1 0 .89-1.43z"/>
+  </svg>
+</button>   
+<button id="AI" class="AI"><span>A<sup>+</sup></span></button>
+  </div>
+
+  <style>
+  .bk-ttl {
+        width:68%;
+  }
+  #AD {
+        margin-left:0;
+  }
+  
+    .AI {
+      flex: 1;
+      font-size: 1.8em;
+      vertical-align: bottom;
+      width: 10%;
+      margin-bottom:0.4em;
+      margin-left:3%;
+      margin-right:3%;
+      text-align: center;
+      font-weight: bold;
+      display: block;
+      padding:0 ;
+
+
+    }
+
+    #cop {
+      font-size: 1.8em;
+      width: 12%;
+      margin-bottom:0.4em;
+      margin-left:2.7%;
+      margin-right:3%;
+      text-align: center;
+      fill: currentColor;
+      display: block;
+      padding:0 ;
+
+    }
+
+    #Fav {
+      width:12%;
+      font-size: 1.8em;
+      margin-bottom:0.4em;
+      margin-left:3%;
+      margin-right:3%;
+      fill: currentColor;
+      display: block;
+      padding:0 ;
+
+    }
+    
+   #shareBtn {
+      font-size: 1.8em;
+      width: 12%;
+      margin:0 ;
+      margin-bottom:0.4em;
+      margin-left:3%;
+      margin-right:3%;
+      text-align: center;
+      fill: currentColor;
+      display: block;
+      padding:0 ;
+
+   } 
+   
+   .footer {
+    padding:0;
+    padding-left:0;
+    bottom: 0;
+    width: 100%;
+    margin:0;
+    margin-bottom:0;
+    position:fixed ;
+    text-align:left ;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.6em;
+    
+}
+
+    
+  </style>
+
+  <script src="NAP.js"></script>
+
+<script>
+  function applyTheme() {
+    const theme = localStorage.getItem('theme');
+    if (theme) {
+      document.body.className = theme;
+    }
+  }
+
+  function toggleTheme() {
+    let currentTheme = document.body.className;
+    let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    document.body.className = newTheme;
+    localStorage.setItem('theme', newTheme);
+  }
+
+  function copyLyrics() {
+    const lyricsText = document.getElementById("hlyrics").innerText;
+    const tempInput = document.createElement("textarea");
+    tempInput.value = lyricsText;
+    tempInput.setAttribute("readonly", "");
+    tempInput.style.position = "absolute";
+    tempInput.style.left = "-9999px";
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    tempInput.setSelectionRange(0, 99999);
+    try {
+      const successful = document.execCommand("copy");
+      alert(successful ? "Maandishi yamenakiliwa kwenye ubao wa kunakili" : "Imeshindikana kunakili maandishi.");
+    } catch (err) {
+      alert("Copy command failed.");
+    }
+    document.body.removeChild(tempInput);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    applyTheme();
+
+    if (document.getElementById("theme")) {
+      document.getElementById("theme").addEventListener("click", toggleTheme);
+    }
+
+    let fontSize = 16;
+
+    function updateFontSize() {
+      const lyricsDiv = document.getElementById("hlyrics");
+      if (lyricsDiv) {
+        lyricsDiv.style.fontSize = `${fontSize}px`;
+      }
+    }
+
+    const incFontBtn = document.getElementById("AI");
+    if (incFontBtn) {
+      incFontBtn.addEventListener("click", () => {
+        fontSize += 2;
+        updateFontSize();
+      });
+    }
+
+    const decFontBtn = document.getElementById("AD");
+    if (decFontBtn) {
+      decFontBtn.addEventListener("click", () => {
+        if (fontSize > 10) {
+          fontSize -= 2;
+          updateFontSize();
+        }
+      });
+    }
+
+    const copyBtn = document.getElementById("cop");
+    if (copyBtn) {
+      copyBtn.addEventListener("click", copyLyrics);
+    }
+
+    const favBtn = document.getElementById("Fav");
+    if (favBtn) {
+      favBtn.addEventListener("click", function () {
+        const hymnTitleText = document.getElementById("hymn-title").innerText;
+        if (hymnTitleText) {
+          let favorites = JSON.parse(localStorage.getItem("favoritesN")) || [];
+          if (!favorites.includes(hymnTitleText)) {
+            favorites.push(hymnTitleText);
+            localStorage.setItem("favoritesN", JSON.stringify(favorites));
+            alert(`${hymnTitleText} imeongezwa kwenye vipendwa.`);
+          } else {
+            alert(`${hymnTitleText} ipo tayari kwenye vipendwa.`);
+          }
+        }
+      });
+    }
+
+    const favoBtn = document.getElementById("favo");
+    if (favoBtn) {
+      favoBtn.addEventListener("click", function () {
+        window.location.href = 'FavN.html';
+      });
+    }
+  });
+  
+function shareFromApp() {
+  var text = document.getElementById("hlyrics").innerText;
+  if (window.Android && Android.shareText) {
+    Android.shareText(text);
+  } else {
+    alert("Sharing not available.");
+  }
+}
+
+  
+</script>
+</body>
+</html>

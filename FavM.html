@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Songs</title>
+    <link rel="stylesheet" href="style.css">
+    
+<script>
+  (function () {
+    try {
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    } catch (e) {
+      console.error('Theme preload error:', e);
+    }
+  })();
+</script>
+    
+</head>
+<body>
+    <button class="back2" id="back"> &#x25c0;Nyuma</button>
+    <button class="bk-ttl">Nyimbo Ninazozipenda</button>
+
+    <div id="favoritesContainer"></div>
+
+<style>
+
+.back2 {
+    height:5vh;
+    width:fit-content;
+    font-size:70%;
+    font-weight: bold;
+    background-color:transparent;
+    color: #595959;
+    border: 0.5px solid #005ba6;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left:1%;
+    vertical-align: top;
+}
+
+
+    .bk-ttl {
+            width:60% ;
+            height:5vh ;
+            margin:0 ;
+            margin-right:2% ;
+            margin-left:2% ;
+            background-color: transparent;
+            transition: background 0.5s;
+            text-align: center ;
+            color:#595959 ;
+            font-weight:bold ;
+            border:0;
+            box-shadow:none ;
+            vertical-align:top ;
+
+}
+
+
+</style>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const favoritesContainer = document.getElementById("favoritesContainer");
+    const bookCode = "M";
+    const pageId = `favorites_${bookCode}`;
+    let favorites = JSON.parse(localStorage.getItem(pageId)) || [];
+
+    if (favorites.length === 0) {
+      favoritesContainer.innerHTML = "<p>Hakuna nyimbo za vipendwa bado.</p>";
+      return;
+    }
+
+    favorites.forEach(({ title, url }, index) => {
+      const songDiv = document.createElement("div");
+
+      const titleBtn = document.createElement("button");
+      titleBtn.innerText = title;
+      titleBtn.classList.add("favorite-song");
+      titleBtn.style.margin = "5px";
+      titleBtn.addEventListener("click", () => {
+        window.location.href = url;
+      });
+
+      const removeBtn = document.createElement("button");
+      removeBtn.innerText = "Ondoa";
+      removeBtn.classList.add("remove-favorite");
+      removeBtn.style.margin = "2.5px";
+      removeBtn.addEventListener("click", () => {
+        favorites.splice(index, 1);
+        localStorage.setItem(pageId, JSON.stringify(favorites));
+        songDiv.remove();
+        if (favorites.length === 0) {
+          favoritesContainer.innerHTML = "<p>Hakuna nyimbo za vipendwa bado.</p>";
+        }
+      });
+
+      songDiv.appendChild(titleBtn);
+      songDiv.appendChild(removeBtn);
+      favoritesContainer.appendChild(songDiv);
+    });
+
+    applyTheme();
+
+    const themeBtn = document.getElementById("theme");
+    if (themeBtn) {
+      themeBtn.addEventListener("click", toggleTheme);
+    }
+
+    const backBtn = document.getElementById("back");
+    if (backBtn) {
+      backBtn.addEventListener("click", () => {
+        window.history.back();
+      });
+    }
+  });
+
+  function applyTheme() {
+    const theme = localStorage.getItem("theme");
+    if (theme) {
+      document.body.className = theme;
+    }
+  }
+
+  function toggleTheme() {
+    const currentTheme = document.body.className;
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    document.body.className = newTheme;
+    localStorage.setItem("theme", newTheme);
+  }
+</script>
+
+</body>
+</html>

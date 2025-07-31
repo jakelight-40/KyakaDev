@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos de l'application des cantiques</title>
+    
+    <script>
+  (function () {
+    try {
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    } catch (e) {
+      console.error('Theme preload error:', e);
+    }
+  })();
+</script>
+    
+</head>
+<body>
+    <header>
+        <button id="back" class="bk">&#x25c0;Retour</button>
+        <button class="bk-ttl">HymnBooks</button>
+        <p>Une application pour un accès facile aux hymnes chrétiens.</p>
+    </header>
+
+    <main>
+        <section>
+            <h4>Aperçu</h4>
+            <p>
+                Cette application de cantiques est une collection numérique d'hymnes, incluant :
+                <strong>Baptist Hymnbook, Louange à l'Éternel, Nyimbo za Mungu</strong> et <strong>Nyimbo za Wokovu</strong>.<br>
+                Elle permet aux utilisateurs d'accéder facilement à ces chants en tout lieu et à tout moment.
+            </p>
+        </section>
+
+        <section>
+            <h4 id="features">Fonctionnalités</h4>
+            <ul>
+                <li><strong>Accès hors ligne</strong> : Lisez les cantiques sans connexion Internet.</li>
+                <li><strong>Mode clair et sombre</strong> : Changez le thème selon vos préférences.</li>
+                <li><strong>Recherche avancée</strong> : Trouvez un cantique par son titre, son numéro ou n'importe quel mot du texte.</li>
+                <li><strong>Favoris</strong> : Enregistrez vos cantiques préférés pour un accès rapide.</li>
+                <li><strong>Ajustement de la taille du texte</strong> : Augmentez ou réduisez la taille de la police pour un meilleur confort.</li>
+                <li><strong>Copie facile</strong> : Copiez rapidement les textes des cantiques dans le presse-papier.</li>
+            </ul>
+        </section>
+
+<section>
+    <h4>Remerciements</h4>
+    <p>Un grand merci à :</p>
+    <ul>
+        <li>Rév. Philémon KALWENZE</li>
+        <li>Philémon SIRIWAYO</li>
+        <li>Rafiki MALIMBO</li>
+        <li>Sera-Alice V.</li>
+    </ul>
+    <p>
+        Je tiens à exprimer ma profonde gratitude à chacun d’entre vous pour votre soutien précieux, 
+        votre confiance en mes capacités, vos conseils avisés, ainsi que pour les textes et les ressources que vous m’avez fournis. 
+        Votre aide a joué un rôle essentiel dans l’aboutissement de cette application. Que Dieu vous bénisse abondamment !
+    </p>
+</section>
+        <section>
+            <h4>À propos du développeur</h4>
+            <p>
+                Cette application a été développée par Jacob KYAKAKALA dans le but de rendre les cantiques plus accessibles.
+                Que cette œuvre soit une bénédiction pour tous ceux qui l'utilisent.
+            </p>
+        </section>
+
+        <section>
+            <h4>Reconnaissance envers Dieu</h4>
+            <p>
+                "Je ne savais pas que je pouvais le faire, mais le Seigneur l’a accompli à travers moi. Il m’a dit :
+                ‘Va avec la force que tu as.’<br>Et voici, c’est fait, non par ma propre force, mais par Sa grâce.
+                Gloire à Dieu pour toujours et à jamais. Amen !"
+            </p>
+        </section>
+
+        <section>
+            <h4>Contact</h4>
+            <p>Pour toute demande d'information, veuillez contacter:</p>
+            <ul>
+                <li>Email: jacobkyaka2@gmail.com</li>
+                <li>Téléphone: +243996777069</li>
+            </ul>
+        </section>
+    </main>
+
+    <div class="dv">
+        To God be all the glory forever !
+    </div>
+
+    <style>
+        .light {
+            color: #555;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        .dark {
+            color: #d9d9d9;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #1e2429;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        main {
+            display: block;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            position: relative;
+            height: calc(100vh - 220px);
+            overflow-y: scroll;
+        }
+
+        .dv {
+            text-align: center;
+            font-size:1em ;
+        }
+
+        section {
+            padding: 20px;
+            border: 1px solid rgb(89, 89, 89);
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(89, 89, 89, 0.2);
+            font-size:1em ;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 10px;
+            border-bottom: 1px solid rgb(89, 89, 89);
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        a {
+            color: #337ab7;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #23527c;
+        }
+
+        p {
+            margin-bottom: 0;
+            font-size:1em ;
+        }
+
+        body {
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        button {
+            margin: 2px;
+            font-size:1.2em;
+            text-align: left;
+            border: none;
+            background-color: transparent;
+            color: #555;
+            user-select: none;
+            width:fit-content;
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
+
+        }
+
+        .dark button {
+            color: #d9d9d9;
+        }
+
+        button:active {
+            color: #004080;
+        }
+
+
+        .bk-ttl {
+            font-weight: bold;
+            width:60% ;
+        }
+        
+        .bk {
+              width:fit-content ;
+              font-size:1em ;
+        }
+
+    </style>
+
+    <script>
+        document.getElementById('back').addEventListener('click', () => {
+            window.history.back();
+        });
+
+        function applyTheme() {
+            const theme = localStorage.getItem('theme');
+            if (theme) {
+                document.body.className = theme;
+            }
+        }
+
+        function toggleTheme() {
+            let currentTheme = document.body.className;
+            let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.body.className = newTheme;
+            localStorage.setItem('theme', newTheme);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            applyTheme();
+        });
+    </script>
+</body>
+</html>

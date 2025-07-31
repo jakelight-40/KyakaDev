@@ -1,0 +1,170 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>HymnBooks</title>
+   <link rel='stylesheet' href='style.css'/>
+   
+<script>
+  (function () {
+    try {
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    } catch (e) {
+      console.error('Theme preload error:', e);
+    }
+  })();
+</script>
+
+   </head>
+    <body>
+     
+    <header class="head">
+     <button onclick="location.href='about.html'" class="info">&#9432;</button>
+     <button class="bk-ttl2">HymnBooks</button>
+     <button class="theme" id='theme' onClick='changeTheme()'>🌙</button>
+    </header>
+    
+     <button class="stol"></button>
+
+    <div class="alb">
+        <button class="but" onclick="location.href='NAP.html'">Nyamuhanga Apipawe</button>
+        <button class="but" onclick="location.href='NZW.html'">Nyimbo Za Wokovu</button>
+        <button class="but" onclick="location.href='NZM.html'">Nyimbo Za Mungu</button>
+        <button class="but" onclick="location.href='LAE.html'">Louange À l'Eternel</button>
+        <button class="but" onclick="location.href='baptisth.html'">Baptist Hymnbook</button>
+
+    </div>
+    <button class="stol"></button>
+<style>
+
+
+.head {
+    margin-bottom: 1vh;
+    text-align: center;
+    height: 8vh;
+    
+}
+
+.light .head {
+      background:#ebebeb ;
+}
+
+.dark .head {
+    background:#002438;
+}
+
+.stol {
+    width: 100%;
+    background-color: grey;
+    height: 0.5vh;
+}
+
+.but {
+    margin: 1vh auto;
+    width: 80%;
+    height: 18vh;
+    text-align: center;
+    white-space: pre-line;
+    color: black;
+    border-radius: 25%;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    background: transparent;
+    border: 0.5vh solid #004678;
+}
+
+.light .but {
+    color: black;
+}
+.light .but:hover {
+    color: white;
+}
+
+.dark .but:hover {
+    color: white;
+}
+
+
+.but:hover {
+    background:#1aafff;
+    transform: translateY(-0.5vh);
+}
+
+.but:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.4vh rgba(0, 70, 120, 0.5);
+}
+
+.bk-ttl2 {
+    background: transparent;
+    border: none;
+    height: 8vh;
+    font-size:1em ;
+}
+
+.alb {
+    margin-top: 1vh;
+    text-align: center;
+    flex-direction: column;
+    position: relative; 
+    height: calc(100vh - 9rem);
+    overflow-y: scroll; 
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+</style>    
+             <script>
+             
+function changeTheme(){
+
+if(document.getElementById('theme').innerHTML==='🌙'){
+
+
+document.getElementById('theme').innerHTML='☀';
+ }
+else{
+
+
+
+
+
+document.getElementById('theme').innerHTML='🌙';
+
+}
+}
+
+
+  function applyTheme() {
+    const theme = localStorage.getItem('theme');
+    if (theme) {
+      document.body.className = theme;
+    }
+  }
+
+  function toggleTheme() {
+    let currentTheme = document.body.className;
+    let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    document.body.className = newTheme; 
+    localStorage.setItem('theme', newTheme);
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    applyTheme();
+    document.getElementById('theme').addEventListener('click', toggleTheme);
+  });
+
+    </script>
+
+    <script src='script.js'></script>
+    </body>
+</html>
