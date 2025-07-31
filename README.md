@@ -16,7 +16,7 @@ Elle permet aux utilisateurs d'accéder facilement à ces chants en tout lieu et
 - **Favoris** : Enregistrez vos cantiques préférés pour un accès rapide.
 - **Ajustement de la taille du texte** : Augmentez ou réduisez la taille de la police pour un meilleur confort.
 - **Copie facile** : Copiez rapidement les textes des cantiques dans le presse-papier, afin de les coller ailleurs.
-- **Partage direct** : Partagez instantanément le texte du cantique sans avoir à le copier manuellement.
+- **Partage direct** : Partagez instantanément le texte du cantique sans avoir à le copier manuellement.(Si vous utiliser la version hors ligne)
 - **Navigation par glissement** : Passez au cantique suivant en glissant de droite à gauche, et revenez au précédent en glissant de gauche à droite.
 - **Boutons de navigation** : Des boutons vous permettent également de changer de cantique (suivant ou précédent) de manière simple et rapide.
 
