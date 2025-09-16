@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        
+   <link rel='stylesheet' href='style.css'/></head>
+   
+   <script>
+  (function () {
+    try {
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    } catch (e) {
+      console.error('Theme preload error:', e);
+    }
+  })();
+</script>
+   
+    <body>
+        <div class="fixer">
+        <button id="back" class="back2"> &#x25c0;Nyuma</button>
+        <button class="bk-ttl">Nyimbo Za Wokovu</button>
+        <button class="favo" onclick="location.href='Favw.html'">♥</button><br>
+        <input type="text" id="song-search" placeholder="Andika kichwa wimbo, namba au maneno" class="search-type">
+        <button id="search-button" class="search-ico"> &#128269; </button>
+        <div id="lyrics" class="lyrics"></div>
+        </div>
+     
+            <div class="hymn-buttons">
+<button class="hymn" data-title="1. E YESU MSHINDAJI WA GOLGOTHA">1. E YESU MSHINDAJI WA GOLGOTHA</button> <br>
+<button class="hymn" data-title="2. KIJITO KIKO CHENYE DAMU">2. KIJITO KIKO CHENYE DAMU</button> <br>
+<button class="hymn" data-title="3. KISIMA SAFI SANA CHATOKA MSALABA">3. KISIMA SAFI SANA CHATOKA MSALABA</button> <br>
+<button class="hymn" data-title="4. USIKU KABLA YA KUTESWA YESU">4. USIKU KABLA YA KUTESWA YESU</button> <br>
+<button class="hymn" data-title="5. DHAHABU NA FEDHA HAZINIOKOI">5. DHAHABU NA FEDHA HAZINIOKOI</button> <br>
+<button class="hymn" data-title="6. TWA'SIFU MUNGU KWA AJILI YA DAMU">6. TWA'SIFU MUNGU KWA AJILI YA DAMU</button> <br>
+<button class="hymn" data-title="7. MWOKOZI AMEUTIMIZA WOKOVU">7. MWOKOZI AMEUTIMIZA WOKOVU</button> <br>
+<button class="hymn" data-title="8. YESU KRISTO ASIFIWE">8. YESU KRISTO ASIFIWE</button> <br>
+<button class="hymn" data-title="9. NAIAMINI DAMU YAKO">9. NAIAMINI DAMU YAKO</button> <br>
+<button class="hymn" data-title="10. DAMU YAKO YENYE BARAKA">10. DAMU YAKO YENYE BARAKA</button> <br>
+<button class="hymn" data-title="11. IKIWA WANANIULIZA">11. IKIWA WANANIULIZA</button> <br>
+<button class="hymn" data-title="12. KWA BADALA YANGU KWELI">12. KWA BADALA YANGU KWELI</button> <br>
+<button class="hymn" data-title="13. NANI AWEZA KUNIWEKA HURU">13. NANI AWEZA KUNIWEKA HURU</button> <br>
+<button class="hymn" data-title="18. MUNGU WETU YU KARIBU">14. MWOKOZI WANGU ULIPOKWENDA JUU</button> <br>
+<button class="hymn" data-title="15. MUNGU UNITUME, MOTO WAKO SASA">15. MUNGU UNITUME, MOTO WAKO SASA</button> <br>
+<button class="hymn" data-title="16. YO YOTE UONAYO HUKU">16. YO YOTE UONAYO HUKU</button> <br>
+<button class="hymn" data-title="17. UKAE NAMI, GIZA INAFIKA">17. UKAE MAMI, GIZA INAFIKA</button> <br>
+<button class="hymn" data-title="18. MUNGU WETU YU KARIBU">18. MUNGU WETU YU KARIBU</button> <br>
+<button class="hymn" data-title="19. MUNGU, TUNANGOJA WOTE">19. MUNGU, TUNANGOJA WOTE</button> <br>
+<button class="hymn" data-title="20. BWANA YESU, UNIONGOZE">20. BWANA YESU, UNIONGOZE</button> <br>
+<button class="hymn" data-title="21. JUU YA MBINGU ZOTE">21. JU YA MBINGU ZOTE</button> <br>
+<button class="hymn" data-title="22. YESU KRISTO BWANA WANGU">22. YESU KRISTO BWANA WANGU</button> <br>
+<button class="hymn" data-title="23. NIKITAZAMA KWA IMANI">23. NIKITAZAMA KWA IMANI</button> <br>
+<button class="hymn" data-title="24. E' MUNGU MWENYE KWELI">24. E' MUNGU MWENYE KWELI</button> <br>
+<button class="hymn" data-title="25. MVUA YA MBINGU UNYESHE">25. MVUA YA MBINGU UNYESHE</button> <br>
+<button class="hymn" data-title="26. NAKUITAJI, YESU, MWOKOZI WANGU">26. NAKUITAJI, YESU, MWOKOZI WANGU</button> <br>
+<button class="hymn" data-title="27. UNA UHODARI LEO WA KUMFUATA YESU">27. UNA UHODARI LEO WA KUMFUATA</button> <br>
+<button class="hymn" data-title="28. NINATAKA KUFUATA WEWE">28. NINATAKA KUFUATA WEWE</button> <br>
+<button class="hymn" data-title="29. UNIVUTE, YESU, NIFUATE NYAYO ZAKO">29. UNIVUTE, YESU, NIFUATE NYAYO ZAKO</button> <br>
+<button class="hymn" data-title="30. TARUMBETA LAKE KRISTO">30. TARUMBETA LAKE KRISTO</button> <br>
+<button class="hymn" data-title="31. KATIKA SAFARI YETU">31. KATIKA SAFARI YETU</button> <br>
+<button class="hymn" data-title="32. HAPO NILIKUWA CHINI">32. HAPO NILIKUWA CHINI</button> <br>
+<button class="hymn" data-title="33. HURU KAMA NDEGE BUSTANINI">33. HURU KAMA NDEGE BUSTANINI</button> <br>
+<button class="hymn" data-title="34. KWA PENDO LAKE KUBWA">34. KWA PENDO LAKE KUBWA</button> <br>
+<button class="hymn" data-title="35. NIMEFIKA KWAKE YESU">35. NIMEFIKA KWAKE YESU</button> <br>
+<button class="hymn" data-title="36. YESU AMENIOKOA AMENIPA UTULIVU">36. YESU AMENIOKOA AMENIPA UTULIVU</button> <br>
+<button class="hymn" data-title="37. BWANA YESU ALINIOKOA KWELI">37. BWANA YESU ALINIOKOA KWELI</button> <br>
+<button class="hymn" data-title="38. NILIKWENDA MBALI SANA">38. NILIKWENDA MBALI SANA</button> <br>
+<button class="hymn" data-title="39. YESU AMEINGIA KATIKA ROHO YANGU">39. YESU AMEINGIA KATIKA ROHO YANGU</button> <br>
+<button class="hymn" data-title="40. AMENIWEKA HURU KWELI">40. AMENIWEKA HURU KWELI</button> <br>
+<button class="hymn" data-title="41. SIKU NYINGI NILIFANYA DHAMBI">41. SIKU NNINGI NILIFANYA DHAMBI</button> <br>
+<button class="hymn" data-title="42. BWANA YESU AMEVUNJA MINYORORO">42. BWANA YESU AMEVUNJA MINYORO</button> <br>
+<button class="hymn" data-title="43. JUU YA MWAMBA UMEJENGA KANISA">43. JU YA MWAMBA UMEJENGA KANISA</button> <br>
+<button class="hymn" data-title="44. TU WATU HURU HURU KWELI">44. TU WATU HURU HURU KWELI</button> <br>
+<button class="hymn" data-title="45. WAISRAELI WALIKA' BABELI UTUMWANI">45. WAISRAELI WALIKA' BABELI UTUMWANI</button> <br>
+<button class="hymn" data-title="46. HAIFAI KUYASUMBUKIA">46. HAIFAI KUYASUMBUKIA</button> <br>
+<button class="hymn" data-title="47. NIKIONA UDHAIFU NA IMANI HABA">47. NIKIONA UDHAIFU NA IMANI HABA</button> <br>
+<button class="hymn" data-title="48. SIWEZI MIMI KUFAAMU SANA">48. SIWEZI MIMI KUFAAMU SANA</button> <br>
+<button class="hymn" data-title="49. NJIA YOTE NAONGOZWA KWA MKONO">49. NJIA YOTE NAONGOZWA KWA MKONO</button> <br>
+<button class="hymn" data-title="50. SITASUMBUKA KWA KUWA MUNGU">50. SITASUMBUKA KUWA KUA MUNGU</button> <br>
+<button class="hymn" data-title="51. NAONA AMANI GOLGOTHA">51. NAONA AMANI GOLGOTHA</button> <br>
+<button class="hymn" data-title="52. KWA SALAMA BABA MUNGU">52. KWA SALAMA BABA MUNGU</button> <br>
+<button class="hymn" data-title="53. KATI' MIKONO YAKE YESU">53. KATI' MIKONO YAKE YESU</button> <br>
+<button class="hymn" data-title="54. USIOGOPE MATESO YAKO">54. USIOGOPE MATESO YAKO</button> <br>
+<button class="hymn" data-title="55. TUPATE KWA NANI FARAJA YA ROHO?">55. TUPATE KWA NANI FARAJA YA ROHO?</button> <br>
+<button class="hymn" data-title="56. YESU, NINAKUTOLEA VYOTE">56. YESU, NINAKUTOLEA VYOTE</button> <br>
+<button class="hymn" data-title="57. YESU, ULIYEKUFA KWA AJILI YANGU">57. YESU, ULIYEKUFA KWA AJILI YANGU</button> <br>
+<button class="hymn" data-title="58. UNIPE RAHA TELE KAMA MTO">58. UNIPE RAHA TELE KAMA MTO</button> <br>
+<button class="hymn" data-title="59. YESU, NINAKUTOLEA, MOYO NA MAISHA">59. YESU, NINAKUTOLEA, MOYO</button> <br>
+<button class="hymn" data-title="60. NI HERI KUONA NDUGU">60. NI HERI KUAONA NDUGU</button> <br>
+<button class="hymn" data-title="61. ENYI WATU WA SAYUNI">61. ENYI WATU WA SAYUNI</button> <br>
+<button class="hymn" data-title="62. MUNGU, NIVUTE KWAKO">62. MUNGU, NIVUTE KWAKO</button> <br>
+<button class="hymn" data-title="63. YESU, NIVUTE KARIBU NAWE">63. YESU, NIVUTE KARIBU NAWE</button> <br>
+<button class="hymn" data-title="64. KIMYA, E' MOYO WANGU">64. KIMYA, E' MOYO WANGU</button> <br>
+<button class="hymn" data-title="65. HUKO JUU YA NYOTA ZOTE">65. HUKO JUU YA NYOTA ZOTE</button> <br>
+<button class="hymn" data-title="66. WAKRISTO WA NCHI ZOTE">66. WAKRISTO WA NCHI ZOTE</button> <br>
+<button class="hymn" data-title="67. TUNAKARIBIA KAO LA MBINGUNI">67. TUNAKARIBIA KAO LA MBINGUNI</button> <br>
+<button class="hymn" data-title="68. MBINGUNI KWA MWOKOZI WANGU">68. MBINGUNI KWA MWOKOZI WANGU</button> <br>
+<button class="hymn" data-title="69. JE, TUTAONANA TENA HUKO NG'AMBO">69. JE, TUTAONANA TENA HUKO NG'AMBO</button> <br>
+<button class="hymn" data-title="70. KUNA MJI HUKO JUU">70. KUNA MJI HUKO JUU</button> <br>
+<button class="hymn" data-title="71. NIMEKWISHA KUINGIA NCHI NZURI">71. NIMEKWISHA KUINGIA NCHI NZURI</button> <br>
+<button class="hymn" data-title="72. MIMI MGENI KATIKA DUNIA">72. MIMI MGENI KATIKA DUNIA</button> <br>
+<button class="hymn" data-title="73. NAJUA NJIA MOJA YAKUFIKA MBINGUNI">73. NAJUA NJIA MOJA YAKUFIKA</button> <br>
+<button class="hymn" data-title="74. MGENI MIMI HAPA MAHALI PA UGENI">74. MGENI MIMI HAPA MAHALI PA UGENI</button> <br>
+<button class="hymn" data-title="75. NILIYE MSAFIRI, MGENI DUNIANI">75. NILIYE MSAFIRI, MGENI DUNIANI</button> <br>
+<button class="hymn" data-title="76. MGENI MIMI, NINASAFIRI">76. MGENI MIMI, NINASAFIRI</button> <br>
+<button class="hymn" data-title="77. NAIFUATA NJIA YA KU'FIKIA MBINGU">77. NAIFUATA NJIA YA KU'FIKIA MBINGU</button> <br>
+<button class="hymn" data-title="78. NINA UZIMA WA MILELE">78. NINA UZIMA WA MILELE</button> <br>
+<button class="hymn" data-title="79. MAISHA YA MTU [MAFUPI] YA HAPA">79. MAISHA YA MTU [MAFUPI] YA HAPA</button> <br>
+<button class="hymn" data-title="80. ZITAKAPO TIMIA SIKU ZA HUDUMA">80. ZITAKAPO TIMIA SIKU ZA HUDUMA</button> <br>
+<button class="hymn" data-title="81. ALIPOKUFA YESU JU' YA MSALABA">81. ALIPOKUFA YESU JU' YA MSALABA</button> <br>
+<button class="hymn" data-title="82. NINAJUA NCHI NZURI HUKO">82. NINAJUA NCHI NZURI HUKO</button> <br>
+<button class="hymn" data-title="83. NINAJUA NCHI HUKO JUU">83. NINAJUA NCHI HUKO JUU</button> <br>
+<button class="hymn" data-title="84. NINAKUMBUKA SAYUNI">84. NINAKUMBUKA SAYUNI</button> <br>
+<button class="hymn" data-title="85. TWAPASHA HABARI YA MBINGU">85. TWAPASHA HABARI YA MBINGU</button> <br>
+<button class="hymn" data-title="86. TUTAONA FURAHA MBINGUNI">86. TUTAONA FURAHA MBINGUNI</button> <br>
+<button class="hymn" data-title="87. MWISHO WA NJIA YA MKRISTO">87. MWISHO WA NJIA YA MKRISTO</button> <br>
+<button class="hymn" data-title="88. MPONYO APITAYE WOTE AMEFIKA HAPA">88. MPONYO APITAYE WOTE AMEFIKA</button> <br>
+<button class="hymn" data-title="89. NAJUA JINA MOJA ZURI">89. NAJUA JINA MOJA ZURI</button> <br>
+<button class="hymn" data-title="90. YESU, YESU, JINA KUBWA">90. YESU, YESU, JINA KUBWA</button> <br>
+<button class="hymn" data-title="91. YESU, JINA HILI JEMA">91. YESU, JINA HILI JEMA</button> <br>
+<button class="hymn" data-title="92. YESU! JINA HILI LINAPITA KILA JINA">92. YESU! JINA HILI LINAPITA KILA JINA</button> <br>
+<button class="hymn" data-title="93. SIKU CHACHE, NA TENA WAKRISTO">93. SIKU CHACHE, NA TENA WAKRISTO</button> <br>
+<button class="hymn" data-title="94. LO! NURU INAPAMBAZUKA">94. LO! NURU INAPAMBAZUKA</button> <br>
+<button class="hymn" data-title="95. NCHI NZURI YATUNGOJA HUKU JUU">95. NCHI NZURI YATUNGOJA HUKU JU</button> <br>
+<button class="hymn" data-title="96. MWOKOZI WETU ALIAHIDI">96. MWOKOZI WETU ALIAHIDI</button> <br>
+<button class="hymn" data-title="97. BADO KIDOGO JUA LITAPANDA">97. BADO KIDOGO JUA LITAPANDA</button> <br>
+<button class="hymn" data-title="98. SIKU MOJA TUTAONA UTUKUFU WAKE">98. SIKU MOJA TUTAONA UTUKUFU WAKE</button> <br>
+<button class="hymn" data-title="99. SIKU MOJA NITWAMWONA BWANA">99. SIKU MOJA NITWAMWONA BWANA</button> <br>
+<button class="hymn" data-title="100. LO! BENDERA INATWEKWA">100. LO! BENDERA INATWEKWA</button> <br>
+<button class="hymn" data-title="101. E' MLINZI, TWAULIZA">101. E' MLINZI, TWAULIZA</button> <br>
+<button class="hymn" data-title="102. SAYUNI, ULAKI BWANAKO">102. SAYUNI, ULAKI BWANAKO</button> <br>
+<button class="hymn" data-title="103. SIKU KUBWA YA MASHANGILIO">103. SIKU KUBWA YA MASHANGILIO</button> <br>
+<button class="hymn" data-title="104. LO! HORINI BETHLEHEMU">104. LO! HORINI BETHLEHEMU</button> <br>
+<button class="hymn" data-title="105. WAKATI WA NOELI">105. WAKATI WA NOELI</button> <br>
+<button class="hymn" data-title="106. TUIMBE ASUBUHI HII">106. TUIMBE ASUBUHI HII</button> <br>
+<button class="hymn" data-title="107. ALIPOTESWA YESU PEKE'">107. ALIPOTESWA YESU PEKE'</button> <br>
+<button class="hymn" data-title="108. MWANA KONDO' WA MUNGU">108. MWANA KONDO' WA MUNGU</button> <br>
+<button class="hymn" data-title="109. YESU, UNIONYE TENA MSALABA WAKO">109. YESU, UNIONYE TENA MSALABA</button> <br>
+<button class="hymn" data-title="110. MWAMBA ULIOPASUKA">110. MWAMBA ULIOPASUKA</button> <br>
+<button class="hymn" data-title="111. E' YESU, SITAUSAHAU UCHUNGU WAKO">111. E' YESU, SITAUSAHAU UCHUNGU</button> <br>
+<button class="hymn" data-title="112. ULINDE ROHO NA NAFSI YANGU">112. ULINDE ROHO NA NAFSI YANGU</button> <br>
+<button class="hymn" data-title="113. MSALABANI MWOKOZI WANGU">113. MSALABANI MWOKOZI WANGU</button> <br>
+<button class="hymn" data-title="114. IMBA HABARI NJEMA">114. IMBA HABARI NJEMA</button> <br>
+<button class="hymn" data-title="115. PENDO LA MUNGU NI KUBWA">115. PENDO LA MUNGU NI KUBWA</button> <br>
+<button class="hymn" data-title="116. TUIMBIE, TUMSIFU YESU">116. TUIMBIE, TUMSIFU YESU</button> <br>
+<button class="hymn" data-title="117. NILIPOFIKA GOLGOTHA">117. NILIPOFIKA GOLGOTHA</button> <br>
+<button class="hymn" data-title="118. NI MWOKOZI MZURI NINAYE">118. NI MWOKOZI MZURI NINAYE</button> <br>
+<button class="hymn" data-title="119. TUIMBIE MSALABA WA MWOKOZI">119. TUIMBIE MSALABA WA MWOKOZI</button> <br>
+<button class="hymn" data-title="120. MSALABANI NILIMWONA YESU">120. MSALABANI NILIMWONA YESU</button> <br>
+<button class="hymn" data-title="121. YESU NI FURAHA YANGU">121. YESU NI FURAHA YANGU</button> <br>
+<button class="hymn" data-title="122. MWOKOZI KAMILI NI YESU PEKEE">122. MWOKOZI KAMILI NI YESU PEKEE</button> <br>
+<button class="hymn" data-title="123. MWOKOZI MZURI NINAYE">123. MWOKOZI MZURI NINAYE</button> <br>
+<button class="hymn" data-title="124. NAONA PENDO KUBWA MNO">124. NAONA PENDO KUBWA MNO</button> <br>
+<button class="hymn" data-title="125. HALELUYA! NAFURAHI, NINAIMBA">125. HALELUYA! NAFURAHI, NINAIMBA</button> <br>
+<button class="hymn" data-title="126. E' MTAKATIFU, MUNGU WA MAJESHI">126. E' MTAKATIFU, MUNGU WA MAJESHI</button> <br>
+<button class="hymn" data-title="127. NIMEUONA MTO SAFI">127. NIMEUONA MTO SAFI</button> <br>
+<button class="hymn" data-title="128. NINA RAFIKI MWEMA">128. NINA RAFIKI MWEMA</button> <br>
+<button class="hymn" data-title="129. NINATAKA KUMSIFU YESU KRISTO">129. NINATAKA KUMSIFU YESU KRISTO</button> <br>
+<button class="hymn" data-title="130. NINATAKA KUMSIFU YESU BWANA">130. NINATAKA KUMSIFU YESU BWANA</button> <br>
+<button class="hymn" data-title="131. MIMI MKRISTO, NITA'VYOKUWA">131. MIMI MKRISTO, NITA'VYOKUWA</button> <br>
+<button class="hymn" data-title="132. YESU MWOKOZI, UNANIPENDA">132. YESU MWOKOZI, UNANIPENDA</button> <br>
+<button class="hymn" data-title="133. UFURAHI, MOYO WANGU">133. UFURAHI, MOYO WANGU</button> <br>
+<button class="hymn" data-title="134. WATU WA MUNGU, MSHANGILIENI">134. WATU WA MUNGU, MSHANGILIENI</button> <br>
+<button class="hymn" data-title="135. SIFU BWANA, NINYI WATU WAKE">135. SIFU BWANA, NINYI WATU WAKE</button> <br>
+<button class="hymn" data-title="136. TUINUE MOYO TUKISIFU YEYE">136. TUINUE MOYO TUKISIFU YEYE</button> <br>
+<button class="hymn" data-title="137. NAFURAHI KWA SABABU KATI' DAMU">137. NAFURAHI KWA SABABU KATI' DAMU</button> <br>
+<button class="hymn" data-title="138. SASA TAYARI KWETU SIKU YA KUOKOKA">138. SASA TAYARI KWETU SIKU</button> <br>
+<button class="hymn" data-title="139. NINA FURAHA KUBWA, NAPUMZIKA">139. NINA FURAHA KUBWA, NAPUMZIKA</button> <br>
+<button class="hymn" data-title="140. UKICHUKULIWA NA MASHAKA YAKO">140. UKICHUKULIWA NA MASHAKA YAKO</button> <br>
+<button class="hymn" data-title="141. MWOKOZI WETU ANATUPA FURAHA">141. MWOKOZI WETU ANATUPA FURAHA</button> <br>
+<button class="hymn" data-title="142. KWA NAMNA NYINGI NILITAFUTA">142. KWA NAMNA NYINGI NILITAFUTA</button> <br>
+<button class="hymn" data-title="143. HERI HALISI, YESU NI WANGU">143. HERI HALISI, YESU NI WANGU</button> <br>
+<button class="hymn" data-title="144. SAWA NA KISIMA SAFI">144. SAWA NA KISIMA SAFI</button> <br>
+<button class="hymn" data-title="145. MUNGU WANGU MKUU WANIJAZA">145. MUNGU WANGU MKUU WANIJAZA</button> <br>
+<button class="hymn" data-title="146. KARIBU NA WENZANGU NILIPOTEA">146. KARIBU NA WENZANGU NILIPOTEA</button> <br>
+<button class="hymn" data-title="147. MWENYEZI MUNGU WA ZAMANI ZOTE">147. MWENYEZI MUNGU WA ZAMANI ZOTE</button> <br>
+<button class="hymn" data-title="148. NGUVU ILE ILISHUKA JU' YA WANAFUNZI">148. NGUVU ILE ILISHUKA JU'</button> <br>
+<button class="hymn" data-title="149. UZIMA NINAO MOYONNI DAIMA">149. UZIMA NINAO MOYONI DAIMA</button> <br>
+<button class="hymn" data-title="150. NATAKA KUPOKEA BARAKA YAKE MUNGU">150. NATAKA KUPOKEA BARAKA</button> <br>
+<button class="hymn" data-title="151. MWOKOZI, MOTO SAFI, TUNATAKA MOTO">151. MWOKOZI, MOTO SAFI, TUNATAKA</button> <br>
+<button class="hymn" data-title="152. YESU ALIPOLALA KATI' KABURI">152. YESU ALIPOLALA KATI' KABURI</button> <br>
+<button class="hymn" data-title="153. YESU KRISTO ALIFUFUKA AKATOKA">153. YESU KRISTO ALIFUFUKA AKATOKA</button> <br>
+<button class="hymn" data-title="154. E' RAFIKI, SHAKA ZAKO ZIPELEKE KWAKE">154. E' RAFIKI, SHAKA ZAKO ZIPELEKE</button> <br>
+<button class="hymn" data-title="155. KATIKA MATUMAINI KWA MUNGU">155. KATIKA MATUMAINI KWA MUNGU</button> <br>
+<button class="hymn" data-title="156. WALIAMINIO NENO LAKE MUNGU">156. WALIAMINIO NENO LAKE MUNGU</button> <br>
+<button class="hymn" data-title="157. HAIDHURU KWANGU HUKU CHINI">157. HAIDHURU KWANGU HUKU CHINI</button> <br>
+<button class="hymn" data-title="158. HERI MTU ANAYE AMINI MUNGU BABA">158. HERI MTU ANAYE AMINI MUNGU BABA</button> <br>
+<button class="hymn" data-title="159. NASIKIA BWANA YESU ANIITA">159. NASIKIA BWANA YESU ANIITA</button> <br>
+<button class="hymn" data-title="160. AHADI ZOTE ZA MUNGU WETU">160. AHADI ZOTE ZA MUNGU WETU</button> <br>
+<button class="hymn" data-title="161. UMESHIRIKIANA NAYE YESU">161. UMESHIRIKIANA NAYE YESU</button> <br>
+<button class="hymn" data-title="162. BWANA YESU UWE NAMI">162. BWANA YESU UWE NAMI</button> <br>
+<button class="hymn" data-title="163. AHADI ZOTE ZA MUNGU ZINASIMAMA">163. AHADI ZOTE ZA MUNGU ZINASIMAMA</button> <br>
+<button class="hymn" data-title="164. ISRAELI WAKE MUNGU, KIMYA SANA">164. ISRAELI WAKE MUNGU, KIMYA SANA</button> <br>
+<button class="hymn" data-title="165. NITAZAMAPO KWA IMANI MWOKOZI">165. NITAZAMAPO KWA IMANI MWOKOZI</button> <br>
+<button class="hymn" data-title="166. TUKIENDA PAMOJA, KUSHIKANA">166. TUKIENDA PAMOJA, KUSHIKANA</button> <br>
+<button class="hymn" data-title="167. NINAJUA RAFIKI MWEMA, ANITUNZA">167. NINAJUA RAFIKI MWEMA, ANITUNZA</button> <br>
+<button class="hymn" data-title="168. NINA USHIRIKA NA FURAHA KUBWA">168. NINA USHIRIKA NA FURAHA KUBWA</button> <br>
+<button class="hymn" data-title="169. ASKARI WA IMANI SISI">169. ASKARI WA IMANI SISI</button> <br>
+<button class="hymn" data-title="170. NIKIONA SHIDA HUKU KATIKA SAFARI">170. NIKIONA SHIDA HUKU KATIKA SAFARI</button> <br>
+<button class="hymn" data-title="171. MWENYEZI MUNGU NGOME KUU">171. MWENYEZI MUNGU NGOME KUU</button> <br>
+<button class="hymn" data-title="172. SISI TU VIUNGO VYA MWILI 'MOJA">172. SISI TU VIUNGO VYA MWILI 'MOJA</button> <br>
+<button class="hymn" data-title="173. MAISHA KATIKA DUNIA">173. MAISHA KATIKA DUNIA</button> <br>
+<button class="hymn" data-title="174. PENDO KUBWA LA BABANGU LINANG'AA">174. PENDO KUBWA LA BABANGU</button> <br>
+<button class="hymn" data-title="175. SHAMBA LA MUNGU LIMEIVA">175. SHAMBA LA MUNGU LIMEIVA</button> <br>
+<button class="hymn" data-title="176. MUNGU AKUTAKA KATI' SHAMBA LAKE">176. MUNGU AKUTAKA KATI' SHAMBA</button> <br>
+<button class="hymn" data-title="177. NIPE HABARI YA YESU, UIANDIKE">177. NIPE HABARI YA YESU, UIANDIKE</button> <br>
+<button class="hymn" data-title="178. YESU KUTOKA MBINGUNI ALIINGIA">178. YESU KUTOKA MBINGUNI ALIINGIA</button> <br>
+<button class="hymn" data-title="179. SIKU MOJA MAVUNO YATAISHA KABISA">179. SIKU MOJA MAVUNO YATAISHA</button> <br>
+<button class="hymn" data-title="180. BWANA YESU ANATUULIZA">180. BWANA YESU ANATUULIZA</button> <br>
+<button class="hymn" data-title="181. TUTAZAME KULE MBELE">181. TUTAZAME KULE MBELE</button> <br>
+<button class="hymn" data-title="182. KISA CHA KALE NIPE HABARI">182. KISA CHA KALE NIPE HABARI</button> <br>
+<button class="hymn" data-title="183. PANDA MBEGU NJEMA ANZA ASUBUHI">183. PANDA MBEGU NJEMA ANZA</button> <br>
+<button class="hymn" data-title="184. NITAKWENDA MAHALI PA GIZA">184. NITAKWENDA MAHALI PA GIZA</button> <br>
+<button class="hymn" data-title="185. NEEMA KUBWA YA MUNGU WETU">185. NEEMA KUBWA YA MUNGU WETU</button> <br>
+<button class="hymn" data-title="186. FANYIA MUNGU KAZI, MBIO USIKU">186. FANYIA MUNGU KAZI, MBIO USIKU</button> <br>
+<button class="hymn" data-title="187. TU WAVUNAJI WAKE MUNGU">187. TU WAVUNAJI WAKE MUNGU</button> <br>
+<button class="hymn" data-title="188. WENGI WAKASEMA: BADO">188. WENGI WAKASEMA: BADO</button> <br>
+<button class="hymn" data-title="189. UNIHUBIRI HABARI NJEMA">189. UNIHUBIRI HABARI NJEMA</button> <br>
+<button class="hymn" data-title="190. KISIMA CHA LEHI KINGALI">190. KISIMA CHA LEHI KINGALI</button> <br>
+<button class="hymn" data-title="191. YAPIGWA HODI KWANGU MGENI AFIKA">191. YAPIGWA HODI KWANGU MGENI AFIKA</button> <br>
+<button class="hymn" data-title="192. SAUTI MOJA ILINIULIZA">192. SAUTI MOJA ILINIULIZA</button> <br>
+<button class="hymn" data-title="193. NI NENO ZURI LA 'AMINIWA">193. NI NENO ZURI LA 'AMINIWA</button> <br>
+<button class="hymn" data-title="194. USIKIE BWAN YESU ANAYEKUITA LEO">194. USIKIE BWAN YESU ANAYEKUITA LEO</button> <br>
+<button class="hymn" data-title="195. TUNASIKIA LEO HABARI, INAWAITA WATU">195. TUNASIKIA LEO HABARI, INAWAITA</button> <br>
+<button class="hymn" data-title="196. USIYEFANYA BIDII KABISA">196. USIYEFANYA BIDII KABISA</button> <br>
+<button class="hymn" data-title="197. HAPO NILIPOKUWA DHAMBINI">197. HAPO NILIPOKUWA DHAMBINI</button> <br>
+<button class="hymn" data-title="198. E' MTU MWENYE KIU, UFIKE KWAKE">198. E' MTU MWENYE KIU, UFIKE KWAKE</button> <br>
+<button class="hymn" data-title="199. NJONI WOTE MTESWAO!">199. NJONI WOTE MTESWAO!</button> <br>
+<button class="hymn" data-title="200. NJONI WOTE, MLE, MNYWE">200. NJONI WOTE, MLE, MNYWE</button> <br>
+<button class="hymn" data-title="201. NJOO, MWENYE HUZUNI NINGI">201. NJOO, MWENYE HUZUNI NINGI</button> <br>
+<button class="hymn" data-title="202. NJOO KWA YESU MWOKOZI">202. NJOO KWA YESU MWOKOZI</button> <br>
+<button class="hymn" data-title="203. HATUA MOJA KATI YA WEWE NA MWOKOZI">203. HATUA MOJA KATI YA WEWE</button> <br>
+<button class="hymn" data-title="204. PENDO LA MWOKOZI KUBWA MNO!">204. PENDO LA MWOKOZI KUBWA MNO!</button> <br>
+<button class="hymn" data-title="205. YESU MWOKOZI AITA KWA PENDO">205. YESU MWOKOZI AITA KWA PENDO</button> <br>
+<button class="hymn" data-title="206. RAFIKI YANGU TAZAMA">206. RAFIKI YANGU TAZAMA</button> <br>
+<button class="hymn" data-title="207. UMGEUKIE MWOKOZI, JITENGE NA OVU">207. UMGEUKIE MWOKOZI, JITENGE</button> <br>
+<button class="hymn" data-title="208. PIGA MAKENGELE YA FURAHA LEO">208. PIGA MAKENGELE YA FURAHA LEO</button> <br>
+<button class="hymn" data-title="209. UWATAFUTE WANAOPOTEA">209. UWATAFUTE WANAOPOTEA</button> <br>
+<button class="hymn" data-title="210. IMBA INJILI YA YESU KWA MOYO">210. IMBA INJILI YA YESU KWA MOYO</button> <br>
+<button class="hymn" data-title="211. NJOO KWA YESU USISHANGAE">211. NJOO KWA YESU USISHANGAE</button> <br>
+<button class="hymn" data-title="212. SAUTI YA YESU NILIISIKIA, KWA PENDO">212. SAUTI YA YESU NILIISIKIA</button> <br>
+<button class="hymn" data-title="213. KAMA UNATAKA KUWA MTU WAKE YESU">213. KAMA UNATAKA KUWA MTU</button> <br>
+<button class="hymn" data-title="214. NAMTAFUTA MWANA WANGU">214. NAMTAFUTA MWANA WANGU</button> <br>
+<button class="hymn" data-title="215. MWENYEZI MUNGU ANAFANYA ISHARA">215. MWENYEZI MUNGU ANAFANYA</button> <br>
+<button class="hymn" data-title="216. NAFASI INGALIKO ARUSINI">216. NAFASI INGALIKO ARUSINI</button> <br>
+<button class="hymn" data-title="217. BWANA YESU ATAKUJA KUTOKA MBINGUNI">217. BWANA YESU ATAKUJA KUTOKA</button> <br>
+<button class="hymn" data-title="218. MTOTO MIMI NI MASKINI">218. MTOTO MIMI NI MASKINI</button> <br>
+<button class="hymn" data-title="219. HATUMJUI RAFIKI MWEMA">219. HATUMJUI RAFIKI MWEMA</button> <br>
+<button class="hymn" data-title="220. YESU, WEWE U MCHUNGA WANGU">220. YESU, WEWE U MCHUNGA WANGU</button> <br>
+<button class="hymn" data-title="221. E' MTOTO, YAINUE MACHO YAKO">221. E' MTOTO, YAINUE MACHO YAKO</button> <br>
+<button class="hymn" data-title="222. BWANA YESU ANASEMA, DHAIFU WEWE">222. BWANA YESU ANASEMA, DHAIFU</button> <br>
+<button class="hymn" data-title="223. NI UHERI BORA KUMWAMINI BWANA">223. NI UHERI BORA KUMWAMINI BWANA</button> <br>
+<button class="hymn" data-title="224. YESU, MWENYE PENDO KUBWA">224. YESU, MWENYE PENDO KUBWA</button> <br>
+<button class="hymn" data-title="225. LO! BENDERA MBELE YAKO">225. LO! BENDEA MBELE YAKO</button> <br>
+<button class="hymn" data-title="226. MACHO YANGU KUMTAZAMA">226. MACHO YANGU KUMTAZAMA</button> <br>
+<button class="hymn" data-title="227. MUNGU ALIYE MBINGUNI">227. MUNGU ALIYE MBINGUNI</button> <br>
+<button class="hymn" data-title="228. WAKATI WA UTOTO WAKO">228. WAKATI WA UTOTO WAKO</button> <br>
+<button class="hymn" data-title="229. MWOKOZI, MFALME, ULISULIBIWA">229. MWOKOZI, MFALME, ULISULIBIWA</button> <br>
+<button class="hymn" data-title="230. GOLGOTHA MWOKOZI ALITUNDIKWA">230. GOLGOTHA MWOKOZI ALITUNDIKWA</button> <br>
+<button class="hymn" data-title="231. MWOKOZI ALITOA DAMU KWA'JILI">231. MWOKOZI ALITOA DAMU KWA'JILI</button> <br>
+<button class="hymn" data-title="232. NILIPOFIKA KWA BWANA YESU">232. NILIPOFIKA KWA BWANA YESU</button> <br>
+<button class="hymn" data-title="233. TAZAMA MWOKOZI ALIYEKUFILIA">233. TAZAMA MWOKOZI ALIYEKUFILIA</button> <br>
+<button class="hymn" data-title="234. UTUKUFU WA MBINGUNI NI WA HERI">234. UTUKUFU WA MBINGUNI NI WA HERI</button> <br>
+<button class="hymn" data-title="235. TUMEKOMBOZWA KATIKA NCHI">235. TUMEKOMBOZWA KATIKA NCHI</button> <br>
+<button class="hymn" data-title="236. DHAIFU, MWENYE DHAMBI">236. DHAIFU, MWENYE DHAMBI</button> <br>
+<button class="hymn" data-title="237. MWOKOZI WANGU NI MWAMBA BORA">237. MWOKOZI WANGU NI MWAMBA</button> <br>
+<button class="hymn" data-title="238. NIFANANISHWE NAWE MWOKOZI">238. NIFANANISHWE NAWE MWOKOZI</button> <br>
+<button class="hymn" data-title="239. NENO BAYA LISITOKE KAMWE">239. NENO BAYA LISITOKE KAMWE</button> <br>
+<button class="hymn" data-title="240. NAVUTWA KWAKE YESU">240. NAVUTWA KWAKE YESU</button> <br>
+<button class="hymn" data-title="241. SITASHAWISHIWA TENA NA DUNIA HUKU">241. SITASHAWISHIWA TENA NA DUNIA</button> <br>
+<button class="hymn" data-title="242. MAISHA YANGU YOTE NI MALI">242. MAISHA YANGU YOTE NI MALI</button> <br>
+<button class="hymn" data-title="243. UKICHOKA KWA SAFARI NGUMU">243. UKICHOKA KWA SAFARI NGUMU</button> <br>
+<button class="hymn" data-title="244. SAFARI YANGU HUKU IKIWA HATARINI">244. SAFARI YANGU HUKU IKIWA HATARINI</button> <br>
+<button class="hymn" data-title="245. MIKWAJU ITIAPO GIZA NA KIVULI">245. MIKWAJU ITIAPO GIZA NA KIVULI</button> <br>
+<button class="hymn" data-title="246. HESHIMA NA SIFA ZINA BABA MBINGUNI">246. HESHIMA NA SIFA ZINA BABA</button> <br>
+<button class="hymn" data-title="247. NAPENDA SANA KUMSHUKURU MWOKOZI">247. NAPENDA SANA KUMSHUKURU</button> <br>
+<button class="hymn" data-title="248. YESU AKINIONGOZA SITAANGUKA">248. YESU AKINIONGOZA SITAANGUKA</button> <br>
+<button class="hymn" data-title="249. ZAMANI MJINI MWA YERUSALEMU">249. ZAMANI MJINI MWA YERUSALEMU</button> <br>
+<button class="hymn" data-title="250. IKAWA SIKU KUBWA KWANGU">250. IKAWA SIKU KUBWA KWANGU</button> <br>
+<button class="hymn" data-title="251. HERI MIMI KWANI MKOMBOZI WANGU">251. HERI MIMI KWANI MKOMBOZI WANGU</button> <br>
+<button class="hymn" data-title="252. NINAKUSHUKURU MUNGU KWA FADHILI ZAKO">252. NINAKUSHUKURU MUNGU</button> <br>
+<button class="hymn" data-title="253. SIKU YA FURAHA INATUFIKIA">253. SIKU YA FURAHA INATUFIKIA</button> <br>
+<button class="hymn" data-title="254. E' ROHO YANGU, SIKILIZA VEMA">254. E' ROHO YANGU, SIKILIZA VEMA</button> <br>
+<button class="hymn" data-title="255. ZIMETIMIZWA AHADI NJEMA">255. ZIMETIMIZWA AHADI NJEMA</button> <br>
+<button class="hymn" data-title="256. ASUBUHI NA MAPEMA SIKU YA HABARI">256. ASUBUHI NA MAPEMA SIKU</button> <br>
+<button class="hymn" data-title="257. SIKU YA KUISIKIA PARAPANDA">257. SIKU YA KUISIKIA PARAPANDA</button> <br>
+<button class="hymn" data-title="258. MKUTANO 'KUBWA GANI MLIMANI">258. MKUTANO 'KUBWA GANI MLIMANI</button> <br>
+<button class="hymn" data-title="259. NAFIKIRI SIKU TUTAKAYOFIKA MBINGUNI">259. NAFIKIRI SIKU TUTAKAYOFIKA</button> <br>
+<button class="hymn" data-title="260. MWENYEZI AMEJENGA MJI">260. MWENYEZI AMEJENGA MJI</button> <br>
+<button class="hymn" data-title="261. MSAFIRI ULIE NJIANI">261. MSAFIRI ULIE NJIANI</button> <br>
+<button class="hymn" data-title="262. KITAMBO BADO VITA ITAISHA">262. KITAMBO BADO VITA ITAISHA</button> <br>
+<button class="hymn" data-title="263. ENYI KUNDI LAKE MUNGU">263. ENYI KUNDI LAKE MUNGU</button> <br>
+<button class="hymn" data-title="264. E' MSAFIRI JANGWANI, TAZAMA JUU">264. E' MSAFIRI JANGWANI, TAZAMA JUU</button> <br>
+<button class="hymn" data-title="265. TU WASAFIRI, TWAKARIBIA NCHI">265. TU WASAFIRI, TWAKARIBIA NCHI</button> <br>
+<button class="hymn" data-title="266. AYALA NAYE ANAYO SHAUKU YA MAJI">266. AYALA NAYE ANAYO SHAUKU YA MAJI</button> <br>
+<button class="hymn" data-title="267. BABA NAKUOMBA LEO NA MAPEMA">267. BABA NAKUOMBA LEO NA MAPEMA</button> <br>
+<button class="hymn" data-title="268. E' YESU, INGIA ROHONI KABISA">268. E' YESU, INGIA ROHONI KABISA</button> <br>
+<button class="hymn" data-title="269. KATIKA BONDE NA MILIMA">269. KATIKA BONDE NA MILIMA</button> <br>
+<button class="hymn" data-title="270. SIMAMA FANYA VITA PAMOJA NA MFALME">270. SIMAMA FANYA VITA PAMOJA</button> <br>
+<button class="hymn" data-title="271. UWATAFUTE WENZAKO WAPOTEAO">271. UWATAFUTE WENZAKO WAPOTEAO</button> <br>
+<button class="hymn" data-title="272. NANI NI WA YESU? AMTUMIKIE">272. NANI NI WA YESU? AMTUMIKIE</button> <br>
+<button class="hymn" data-title="273. NI UHERI KUMWAMINI MUNGU">273. NI UHERI KUMWAMINI MUNGU</button> <br>
+<button class="hymn" data-title="274. NINAFURAHIA KISIMA DAIMA">274. NINAFURAHIA KISIMA DAIMA</button> <br>
+<button class="hymn" data-title="275. E' MUNGU MWENYE HAKI UNIONGOZE">275. E' MUNGU MWENYE HAKI UNIONGOZE</button> <br>
+<button class="hymn" data-title="276. MATENDO YA MUNGU YAPITA FAHAMU">276. MATENDO YA MUNGU YAPITA</button> <br>
+<button class="hymn" data-title="277. NITAOGOPA NINI GIZANI DUNIANI?">277. NITAOGOPA NINI GIZANI DUNIANI?</button> <br>
+<button class="hymn" data-title="278. NINAINUA MACHO YANGU KWA MUNGU">278. NINAINUA MACHO YANGU</button> <br>
+<button class="hymn" data-title="279. UPENDO WAKE MUNGU UNATUUNGANISHA">279. UPENDO WAKE MUNGU</button> <br>
+<button class="hymn" data-title="280. JINA LAKE YESU KRISTO LINADUMU">280. JINA LAKE YESU KRISTO LINADUMU</button> <br>
+<button class="hymn" data-title="281. YOTE NINAYO NILIYAPOKEA KWA WEMA">281. YOTE NINAYO NILIYAPOKEA</button> <br>
+<button class="hymn" data-title="282. UKIONA KIU SANA UJALIVU WA MWOKOZI">282. UKIONA KIU SANA UJALIVU</button> <br>
+<button class="hymn" data-title="283. NIMEYASIKIA MENGI ALIYOYAFANYA">283. NIMEYASIKIA MENGI ALIYOYAFANYA</button> <br>
+<button class="hymn" data-title="284. USIMTAFUTE YESU KATI' WAFU">284. USIMTAFUTE YESU KATI' WAFU</button> <br>
+<button class="hymn" data-title="285. NENO LA MUNGU NDANI YA BIBLIA">285. NENO LA MUNGU NDANI YA BIBLIA</button> <br>
+<button class="hymn" data-title="286. YESU, ULIKARIBISHWA ARUSINI">286. YESU, ULIKARIBISHWA ARUSINI</button> <br>
+<button class="hymn" data-title="287. TUNAMTIA MIKONONI MWAKO MTOTO">287. TUNAMTIA MIKONONI MWAKO MTOTO</button> <br>
+<button class="hymn" data-title="288. MUNGU WETU UTULINDE">288. MUNGU WETU UTULINDE</button> <br>
+<button class="hymn" data-title="289. NINATAMANI KWENDA MBINGU">289. NINATAMANI KWENDA MBINGU</button> <br>
+<button class="hymn" data-title="290. BARAGUMU LITALIA SANA">290. BARAGUMU LITALIA SANA</button> <br>
+<button class="hymn" data-title="291. MIMI MWENYE HATIA NILIKOMBOLEWA">291. MIMI MWENYE HATIA</button> <br>
+<button class="hymn" data-title="292. KATIKA DAMU TAKATIFU YA MWOKOZI">292. KATIKA DAMU TAKATIFU YA MWOKOZI</button> <br>
+<button class="hymn" data-title="293. NCHI NZURI YA RAHA AJABU">293. NCHI NZURI YA RAHA AJABU</button> <br>
+<button class="hymn" data-title="294. UTUME ROHO YAKO JUU YETU">294. UTUME ROHO YAKO JUU YETU</button> <br>
+<button class="hymn" data-title="295. E' FURAHINI WATU WAKE MUNGU">295. E' FURAHINI WATU WAKE MUNGU</button> <br>
+<button class="hymn" data-title="296. DHAMBI, HATIA ZIMEONDOLEWA">296. DHAMBI, HATIA ZIMEONDOLEWA</button> <br>
+<button class="hymn" data-title="297. NIPE SAA MOJA NAWE YESU">297. NIPE SAA MOJA NAWE YESU</button> <br>
+<button class="hymn" data-title="298. NINAO WIMBO WAKUNIFURAHISHA">298. NINAO WIMBO WAKUNIFURAHISHA</button> <br>
+<button class="hymn" data-title="299. JE, UMELISIKIA JINA ZURI">299. JE, UMELISIKIA JINA ZURI</button> <br>
+<button class="hymn" data-title="300. MUNGU AWABARIKIE NYOTE">300. MUNGU AWABARIKIE NYOTE</button> <br>
+<button class="hymn" data-title="301. NJONI TUMWIMBIE BWANA">301. NJONI TUMWIMBIE BWANA</button> <br>
+<button class="hymn" data-title="302. MUNGU WETU ALITUAMBIA">302. MUNGU WETU ALITUAMBIA</button> <br>
+<button class="hymn" data-title="303. NITAMWIMBIA MUNGU NA FURAHA">303. NITAMWIMBIA MUNGU NA FURAHA</button> <br>
+<button class="hymn" data-title="304. SIFA UWEZO NA HESHIMA">304. SIFA UWEZO NA HESHIMA</button> <br>
+<button class="hymn" data-title="305. SIFA NA SIFA NINAKUPA YESU">305. SIFA NA SIFA NINAKUPA YESU</button> <br>
+<button class="hymn" data-title="306. NINAKUHITAJI MWOKOZI">306. NINAKUHITAJI MWOKOZI</button> <br>
+<button class="hymn" data-title="307. WALIOKOMBOLEWA WAIMBA">307. WALIOKOMBOLEWA WAIMBA</button> <br>
+<button class="hymn" data-title="308. NAONA MAAJABU LEO">308. NAONA MAAJABU LEO</button> <br>
+<button class="hymn" data-title="309. MUNGU AKASEMA IWE NURU">309. MUNGU AKASEMA IWE NURU</button> <br>
+<button class="hymn" data-title="310. UKITAFUTA WOKOVU">310. UKITAFUTA WOKOVU</button> <br>
+<button class="hymn" data-title="311. MARA KWA MARA YESU">311. MARA KWA MARA YESU AITA</button> <br>
+<button class="hymn" data-title="312. ENYI MATAIFA MSIFUNI">312. ENYI MATAIFA MSIFUNI</button> <br>
+<button class="hymn" data-title="313. KUMBE WAKATI WAPITA MBIO">313. KUMBE WAKATI WAPITA MBIO</button> <br>
+<button class="hymn" data-title="314. KUOMBA NI AGIZO NJEMA MNO">314. KUOMBA NI AGIZO NJEMA MNO</button> <br>
+<button class="hymn" data-title="315. BABA MUNGU UKIFUNGA">315. BABA MUNGU UKIFUNGA</button> <br>
+<button class="hymn" data-title="316. NYOTA KUBWA INANGAA">316. NYOTA KUBWA INANGAA</button> <br>
+<button class="hymn" data-title="317. SISI TULIOKOKA NA TUNASHANGILIA">317. SISI TULIOKOKA NA TUNASHANGILIA</button> <br>
+<button class="hymn" data-title="318. NIMELIONA PENDO KUBWA">318. NIMELIONA PENDO KUBWA</button> <br>
+<button class="hymn" data-title="319. NAFURAHIA WOKOVU">319. NAFURAHIA WOKOVU</button> <br>
+<button class="hymn" data-title="320. MUNGU ALIACHA SISI">320. MUNGU ALIACHA SISI</button> <br>
+<button class="hymn" data-title="321. MWOKOZI MZURI NI YESU">321. MWOKOZI MZURI NI YESU</button> <br>
+<button class="hymn" data-title="322. NASHIKA NJIA YA KWENDA BINGU">322. NASHIKA NJIA YA KWENDA BINGU</button> <br>
+<button class="hymn" data-title="323. NAKUTEGEMEA YESU UNILINDE">323. NAKUTEGEMEA YESU UNILINDE</button> <br>
+<button class="hymn" data-title="324. BWANA YESU ATASHUKA MBINGU">324. BWANA YESU ATASHUKA MBINGU</button> <br>
+<button class="hymn" data-title="325. HAPA KATIKA DUNIA">325. HAPA KATIKA DUNIA</button> <br>
+<button class="hymn" data-title="326. SIKU KUU YA MUNGU IMEKARIBIA">326. SIKU KUU YA MUNGU IMEKARIBIA</button> <br>
+<button class="hymn" data-title="327. KATIKA GIZA LA USIKU">327. KATIKA GIZA LA USIKU PAKAWA</button> <br>
+<button class="hymn" data-title="328. BWANA YESU 'TUONGOZE">328. BWANA YESU 'TUONGOZE WENDE</button> <br>
+<button class="hymn" data-title="329. EWE MWANA WA MUNGU">329. EWE MWANA WA MUNGU</button> <br>
+<button class="hymn" data-title="330. YESU ALIPOENDA ALITUACHIA">330. YESU ALIPOENDA ALITUACHIA</button> <br>
+<button class="hymn" data-title="331. ANAYESHUHUDIA KWAMBA TUTAFIKA">331. ANAYESHUHUDIA KWAMBA TUTAFIKA</button> <br>
+<button class="hymn" data-title="332. SAWA NA WAPITAJI WA DUNIA">332. SAWA NA WAPITAJI WA DUNIA</button> <br>
+<button class="hymn" data-title="333. SISI HUKU SI MATAJIRI">333. SISI HUKU SI MATAJIRI</button> <br>
+<button class="hymn" data-title="334. MAJIRA YANATUONYESHA">334. MAJIRA YANATUONYESHA</button> <br>
+<button class="hymn" data-title="335. NITAFANYA NINI MIMI">335. NITAFANYA NINI MIMI</button> <br>
+<button class="hymn" data-title="336. KISIMANI KWA YORDANI">336. KISIMANI KWA YORDANI</button> <br>
+<button class="hymn" data-title="337. TUMPENDE YESU ALIYE TUPENDA">337. TUMPENDE YESU ALIYE TUPENDA</button> <br>
+<button class="hymn" data-title="338. YESU ALINIPENDA">338. YESU ALINIPENDA</button> <br>
+<button class="hymn" data-title="339. WATU WA NG'AMBO">339. WATU WA N'GAMBO</button> <br>
+<button class="hymn" data-title="340. TWENDELEE NA KAZI YA BWANA">340. TWENDELEE NA KAZI YA BWANA</button> <br>
+<button class="hymn" data-title="341. NEEMA YA MUNGU NI KUBWA">341. NEEMA YA MUNGU NI KUBWA</button> <br>
+<button class="hymn" data-title="342. NINASIKIA HABARI YA MJI">342. NINASIKIA HABARI YA MJI</button> <br>
+<button class="hymn" data-title="343. BWANA MUNGU, NASHANGAA">343. BWANA MUNGU, NASHANGAA</button> <br>
+<button class="hymn" data-title="344. KUNYAKULIWA KWA KANISA">344. KUNYAKULIWA KWA KANISA</button> <br>
+<button class="hymn" data-title="345. TUMSIFU MWOKOZI YESU">345. TUMSIFU MWOKOZI YESU</button> <br>
+<button class="hymn" data-title="346. BWANA U SEHEMU YANGU">346. BWANA U SEHEMU YANGU</button> <br>
+<button class="hymn" data-title="347. OH MARA NGAPI TUNASUMBUKA">347. OH MARA NGAPI TUNASUMBUKA</button> <br>
+<button class="hymn" data-title="348. NINASAFIRI KILA SIKU">348. NINASAFIRI KILA SIKU</button> <br>
+<button class="hymn" data-title="349. KUNA MJI MZURI SANA">349. KUNA MJI MZURI SANA</button> <br>
+<button class="hymn" data-title="350. HERI KAMA SAUTI YANGU">350. HERI KAMA SAUTI YANGU</button> <br>
+<button class="hymn" data-title="351. TUKAE NDANI YA YESU">351. TUKAE NDANI YA YESU</button> <br>
+<button class="hymn" data-title="352. MWOMBENI BWANA WA MAVUNO">352. MWOMBENI BWANA</button> <br>
+<button class="hymn" data-title="353. MAFIKIRI YANGU">353. MAFIKIRI YANGU</button> <br>
+<button class="hymn" data-title="354. SAFISHENI ROHO ZENU">354. SAFISHENI ROHO ZENU</button> <br>
+<button class="hymn" data-title="355. KWA KILIMA CHA MBALI">355. KWA KILIMA CHA MBALI</button> <br>
+<button class="hymn" data-title="356. SITASAHAU NILIPOTOKA">356. SITASAHAU NILIPOTOKA</button> <br>
+<button class="hymn" data-title="357. OMBENI NANYI MTAPEWA">357. OMBENI NANYI MTAPEWA</button> <br>
+<button class="hymn" data-title="358. EE YESU INGIA ROHONI KABISA">358. EE YESU INGIA ROHONI</button> <br>
+<button class="hymn" data-title="359. KATIKA ROHO YANGU">359. KATIKA ROHO YANGU</button> <br>
+<button class="hymn" data-title="360. BWANA ASEMA, NITUME NANI">360. BWANA ASEMA, NITUME NANI</button> <br>
+
+            </div>
+            
+        <script>
+
+
+  function applyTheme() {
+    const theme = localStorage.getItem('theme');
+    if (theme) {
+      document.body.className = theme; 
+
+    }
+  }
+
+
+  function toggleTheme() {
+    let currentTheme = document.body.className;
+    let newTheme = currentTheme === 'dark' ? 'light' : 'dark'; 
+    document.body.className = newTheme; 
+    localStorage.setItem('theme', newTheme); 
+  }
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    applyTheme(); 
+    document.getElementById('theme').addEventListener('click', toggleTheme);
+  });
+
+    </script>
+
+    
+    <script src="NZWs.js"></script>
+    
+</body>
+</html>
+
+ 
+

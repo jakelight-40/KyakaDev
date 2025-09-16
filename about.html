@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos de l'application des cantiques</title>
+    
+    <script>
+    (function () {
+        try {
+            const theme = localStorage.getItem('theme');
+            if (theme === 'dark') {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        } catch (e) {
+            console.error('Theme preload error:', e);
+        }
+    })();
+    </script>
+</head>
+<body>
+    <header>
+        <button id="back" class="bk">&#x25c0;Retour</button>
+        <button class="bk-ttl">HymnBooks</button>
+        <button onclick="window.open('https://jakelight-40.github.io/DownloaderHym-Apk/', '_blank')" class="updateCheck">&#x2B07;</button>
+        <p>Une application pour un accès facile aux hymnes chrétiens.</p>
+    </header>
+
+    <main>
+        <section>
+            <h4>Aperçu</h4>
+            <p>
+                Cette application de cantiques est une collection numérique d'hymnes, incluant :  
+                <strong>Baptist Hymnbook, Louange à l'Éternel, Nyimbo za Mungu</strong>, <strong>Nyimbo za Wokovu</strong> et <strong>Nyamuhanga Apipawe</strong>.<br>  
+                Elle permet aux utilisateurs d'accéder facilement à ces chants en tout lieu et à tout moment.  
+            </p>
+            <p>
+              <a href="https://jakelight-40.github.io/DownloaderHym-Apk/" target="_blank">
+                Vérifier les mises à jour
+              </a>
+            </p>
+        </section>
+
+        <section>
+            <h4 id="features">Fonctionnalités</h4>
+            <ul>
+                <li><strong>Accès hors ligne</strong> : Lisez les cantiques sans connexion Internet.</li>
+                <li><strong>Mode clair et sombre</strong> : Changez le thème selon vos préférences.</li>
+                <li><strong>Recherche avancée</strong> : Trouvez un cantique par son titre, son numéro ou n'importe quel mot du texte.</li>
+                <li><strong>Favoris</strong> : Enregistrez vos cantiques préférés pour un accès rapide.</li>
+                <li><strong>Ajustement de la taille du texte</strong> : Augmentez ou réduisez la taille de la police pour un meilleur confort.</li>
+                <li><strong>Copie facile</strong> : Copiez rapidement les textes des cantiques dans le presse-papier, afin de les coller ailleurs.</li>
+                <li><strong>Partage rapide</strong> : Partagez facilement un cantique via WhatsApp, Messenger ou d'autres applications grâce au bouton de partage intégré.</li>
+                <li><strong>Navigation par glissement</strong> : Passez au cantique suivant en glissant de droite à gauche, et revenez au précédent en glissant de gauche à droite.</li>
+                <li><strong>Boutons de navigation</strong> : Des boutons vous permettent également de changer de cantique (suivant ou précédent) de manière simple et rapide.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>Reconnaissance envers Dieu</h4>
+            <p>
+                Mon cœur s'élève en premier lieu vers Toi, ô mon Dieu, source de toute sagesse et de toute force.    
+                Tu es l’Architecte invisible de cette œuvre, le véritable Inspirateur de chaque ligne, de chaque idée, de chaque progrès.    
+                Moi, je ne savais pas que j’en étais capable — mais Toi, Seigneur, Tu le savais déjà.    
+                Tu m’as dit : <em>« Va avec la force que tu as »</em>, et dans Ton amour, Tu as marché avec moi.    
+                Ce projet est né non de mes capacités, mais de Ta grâce puissante à l’œuvre en moi.    
+                À Toi seul reviennent l’honneur, la louange et la gloire pour les siècles des siècles.    
+                Amen !  
+            </p>
+        </section>
+
+        <section>
+            <h4>Remerciements</h4>
+            <p>Je souhaite exprimer ma profonde reconnaissance à toutes les personnes qui m’ont soutenu, chacune à sa manière :</p>
+            <ul>
+                <li><strong>À ma famille</strong> :<br>
+                    <p>Merci d’avoir compris, accepté et soutenu ce travail, même lorsqu’il prenait beaucoup de temps. Votre amour et votre patience ont été un appui précieux.</p>
+                </li>
+
+                <li><strong>Pour les encouragements et les conseils spirituels</strong> :<br>
+                    <br>Rév. Philémon KALWENZE<br>
+                    Philémon SIRIWAYO<br>
+                    <p>Que le Seigneur vous bénisse pour vos paroles édifiantes et vos orientations précieuses dans cette œuvre.</p>
+                </li>
+
+                <li><strong>Pour les textes et ressources des cantiques</strong> :<br>
+                    <br>Rév. Philémon KALWENZE<br>
+                    Faden SIBAMTAKI<br>
+                    P. MENZO Pacifique<br>
+                    <p>Que Dieu vous récompense abondamment pour avoir partagé ces trésors spirituels.</p>
+                </li>
+
+                <li><strong>Pour les tests et les corrections avant publication</strong> :<br>
+                    <br>Rafiki MALIMBO<br>
+                    Faden SIBAMTAKI<br>
+                    Eloge TARAJA
+                    <p>Votre regard attentif et vos remarques ont permis d’améliorer la qualité de cette application. Soyez bénis pour votre engagement dans l’excellence.</p>
+                </li>
+
+                <li><strong>Pour l’aide précieuse dans différents domaines</strong> :<br>
+                    <p>À tous ceux qui ont soutenu ce projet de diverses manières, visibles ou invisibles, je vous dis merci du fond du cœur. Que votre semence soit multipliée dans le Royaume de Dieu.</p>
+                </li>
+            </ul>
+            <p>Que la grâce et la paix de notre Seigneur Jésus-Christ soient avec vous tous !</p>
+        </section>
+
+<section>
+    <h4>À propos du développeur</h4>
+    <p>
+        Cette application a été développée par <strong>Jacob KYAKAKALA</strong>, avec le désir ardent de rendre les cantiques accessibles à toutes et à tous, partout et à tout moment.  
+        Animé par la foi et passionné par la technologie au service du Royaume de Dieu, il prie que cette œuvre soit une source de bénédiction, d’édification et d’inspiration pour chaque utilisateur.
+    </p>
+</section>
+        <section>
+            <h4>Contact</h4>
+            <p>Pour toute demande d’information, correction ou suggestion, vous pouvez me contacter :</p>
+           <ul>
+    <li>Email :jacobkyaka2@gmail.com</li>
+    <li>Téléphone :+243 996 777 069</li>
+</ul>
+        </section>
+    </main>
+
+    <footer class="dv">
+        To God be all the glory forever !
+    </footer>
+
+    <style>
+        .light {
+            color: #555;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        .dark {
+            color: #d9d9d9;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #1e2429;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        main {
+            display: block;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            position: relative;
+            height: calc(100vh - 220px);
+            overflow-y: scroll;
+        }
+
+        .dv {
+            text-align: center;
+            font-size:1em;
+        }
+
+        section {
+            padding: 20px;
+            border: 1px solid rgb(89, 89, 89);
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(89, 89, 89, 0.2);
+            font-size:1em;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 10px;
+            border-bottom: 1px solid rgb(89, 89, 89);
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        a {
+            color: #337ab7;
+        }
+
+        a:hover {
+            color: #23527c;
+        }
+
+        p {
+            margin-bottom: 0;
+            font-size:1em;
+        }
+
+        body {
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        button {
+            margin: 2px;
+            font-size:1.2em;
+            text-align: left;
+            border: none;
+            background-color: transparent;
+            color: #555;
+            user-select: none;
+            width:fit-content;
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .dark button {
+            color: #d9d9d9;
+        }
+
+        button:active {
+            color: #004080;
+        }
+
+        .bk-ttl {
+            font-weight: bold;
+            width:50%;
+        }
+        
+        .updateCheck {
+            border-width:4px;
+            background-color:#ffffff;
+            border-radius:50%;
+            text-align:center;
+            font-size:1em;
+            font-weight:bold;
+            width:8%;
+        }
+        
+        .light .updateCheck {
+            background-color: #1e2429;
+            color:white;
+        }
+        
+        .dark .updateCheck {
+            background-color:white;
+            color:black;
+        }
+
+        .bk {
+            width:fit-content;
+            font-size:1em;
+        }
+    </style>
+
+    <script>
+        document.getElementById('back').addEventListener('click', () => {
+            window.history.back();
+        });
+
+        function applyTheme() {
+            const theme = localStorage.getItem('theme');
+            if (theme) {
+                document.body.className = theme;
+            }
+        }
+
+        function toggleTheme() {
+            let currentTheme = document.body.className;
+            let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.body.className = newTheme;
+            localStorage.setItem('theme', newTheme);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            applyTheme();
+        });
+    </script>
+</body>
+</html>
